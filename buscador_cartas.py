@@ -1,0 +1,88 @@
+from tiendas import tiendas
+
+# --- Colores para la terminal ---
+class Colores:
+    VERDE = '\033[92m'
+    ROJO = '\033[91m'
+    AZUL = '\033[94m'
+    GRIS = '\033[90m'
+    RESET = '\033[0m'
+
+# --- Función para mostrar resultados ---
+def mostrar_resultados(resultados):
+    if not resultados:
+        print("No se encontraron resultados.")
+        return
+
+    disponibles = [r for r in resultados if r['Disponible'] == "Sí"]
+    no_disponibles = [r for r in resultados if r['Disponible'] != "Sí"]
+
+    # Mostrar disponibles
+    if disponibles:
+        print("\n✅ Disponibles:")
+
+        # Buscar precio mínimo
+        precios = []
+        for r in disponibles:
+            # Extraer solo números del precio
+            precio_num = int(''.join(filter(str.isdigit, r['Precio']))) if r['Precio'] != "-" else float('inf')
+            precios.append(precio_num)
+        precio_min = min(precios)
+
+        # Mostrar disponibles, resaltando el más económico
+        for r in disponibles:
+            precio_num = int(''.join(filter(str.isdigit, r['Precio']))) if r['Precio'] != "-" else float('inf')
+            color = Colores.VERDE if precio_num == precio_min else Colores.GRIS
+            simbolo = "💰" if precio_num == precio_min else "  "
+            print(f"{color}{simbolo} {r['Tienda']} | {r['Producto']} | {r['Precio']} | {r['URL']}{Colores.RESET}")
+
+    # Mostrar no disponibles
+    if no_disponibles:
+        print("\n❌ No disponibles:")
+        for r in no_disponibles:
+            print(f"   {r['Tienda']} | {r['Producto']} | {r['Precio']} | {r['URL']}")
+
+# --- Preguntar si desea buscar 1 carta o varias ---
+while True:
+    opcion = input("¿Desea buscar 1 carta o varias? (1/+): ").strip()
+    if opcion in ("1", "+"):
+        break
+    else:
+        print("Por favor ingrese '1' para una carta o '+' para varias cartas.")
+
+# --- Buscar 1 carta ---
+if opcion == "1":
+    carta = input("Ingrese el nombre de la carta: ").strip()
+    resultados = []
+    for tienda in tiendas:
+        resultado = tienda["func"](carta)
+        resultados.append(resultado)
+    mostrar_resultados(resultados)
+
+# --- Buscar varias cartas desde buscar.txt ---
+else:
+    try:
+        with open("buscar.txt", "r", encoding="utf-8") as f:
+            cartas = [line.strip() for line in f if line.strip()]
+
+        batch_size = 3
+        for i in range(0, len(cartas), batch_size):
+            batch = cartas[i:i+batch_size]
+            for carta in batch:
+                print(f"\nBuscando: {carta}")
+                resultados = []
+                for tienda in tiendas:
+                    resultado = tienda["func"](carta)
+                    resultados.append(resultado)
+                mostrar_resultados(resultados)
+
+            # Pausar después de cada batch si hay más cartas
+            if i + batch_size < len(cartas):
+                while True:
+                    continuar = input("\nDesea continuar con el siguiente batch de cartas? [S]: ").strip().upper()
+                    if continuar == "S":
+                        break
+                    else:
+                        print("Ingrese 'S' para continuar con el siguiente batch.")
+    except FileNotFoundError:
+        print("No se encontró el archivo 'buscar.txt'. Asegúrese de que exista en el mismo directorio.")

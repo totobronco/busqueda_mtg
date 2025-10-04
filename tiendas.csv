@@ -1,0 +1,9 @@
+Nombre,URL
+BloodMoonGames,https://bloodmoongames.cl/?post_type=product&s={}&product_cat=
+OasisGames,https://www.oasisgames.cl/search?options%5Bprefix%5D=last&type=product&q={}
+HunterCardTCG,https://www.huntercardtcg.com/?s={}&post_type=product
+GameOfMagicSingles,https://gameofmagicsingles.cl/search?page=1&q={}
+PiedraBruja,https://piedrabruja.cl/search?type=product&q={}
+LaComarca,https://www.tiendalacomarca.cl/search?type=product&options%5Bprefix%5D=last&q={}
+PayToWin,https://www.paytowin.cl/search?page=1&q=%2A{}%2A
+RivendelElConcilio,https://www.rivendelelconcilio.cl/search?q={}
