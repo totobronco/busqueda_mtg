@@ -9,8 +9,8 @@ from .rivendelelconcilio import metadata as rc_metadata
 from .magic4ever_scraper import metadata as m4e_metadata
 from .cartasmagicsur import metadata as cms_metadata 
 
-# Lista de todas las tiendas
 tiendas = [
+
     bm_metadata,
     og_metadata,
     hc_metadata,
@@ -20,5 +20,5 @@ tiendas = [
     ptw_metadata,
     rc_metadata,
     m4e_metadata,
-    cms_metadata 
+    cms_metadata
 ]
