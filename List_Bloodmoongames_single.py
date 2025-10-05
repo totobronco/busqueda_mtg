@@ -20,7 +20,33 @@ def formatear_moneda(valor_int):
     if valor_int is None:
         return ""
     s = f"{valor_int:,}".replace(",", ".")
-    return f"${s} CLP"
+    return int(s) 
+
+def extraer_precio(texto_precio):
+    """
+    Extrae cifra numérica desde texto tipo "$490", "$1.234" o rangos "$1.200 – $1.500".
+    Retorna entero en CLP (ej: 490) o None si falla.
+    """
+    if not texto_precio:
+        return None
+
+    # Extraer todos los números (ignora puntos y comas)
+    precios = re.findall(r"\d[\d\.]*", texto_precio)
+    if not precios:
+        return None
+
+    precios_int = []
+    for p in precios:
+        try:
+            precios_int.append(int(p.replace(".", "")))
+        except ValueError:
+            continue
+
+    if not precios_int:
+        return None
+
+    # Tomar el precio más bajo en caso de rango
+    return min(precios_int)
 
 def limpiar_nombre(titulo):
     """
@@ -34,14 +60,11 @@ def limpiar_nombre(titulo):
     s = s.split("–")[0].split("-")[0].strip()
     return s, foil
 
-def extraer_precio(span_price):
-    """Toma solo el precio más bajo si hay rango"""
-    precios = re.findall(r"\d[\d\.]*", span_price)
-    if not precios:
-        return None
-    # Convertir a int, quitando puntos
-    precios_int = [int(p.replace(".","")) for p in precios]
-    return min(precios_int)
+def formatear_moneda(valor_int):
+    """Convierte un número entero a formato $xx.xxx CLP"""
+    if valor_int is None:
+        return ""
+    return f"${valor_int:,}".replace(",", ".")
 
 def obtener_productos_pagina(pagina):
     url = BASE_URL.format(pagina)
@@ -112,10 +135,6 @@ def descargar_imagenes(productos, carpeta):
     print(f"✅ Imágenes descargadas: {descargadas}/{total}")
 
 def main():
-    if not preguntar_si_no("¿Deseas iniciar el scraping de BloodMoonGames?"):
-        print("✋ Operación cancelada.")
-        return
-
     pagina = 1
     todos = []
 

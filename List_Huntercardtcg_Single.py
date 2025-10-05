@@ -23,12 +23,10 @@ def preguntar_si_no(pregunta):
         print("❌ Opción no válida. Por favor, ingresa 'S' para sí o 'N' para no.")
 
 def formatear_moneda_clp(valor_int):
-    """Formato $xx.xxx CLP (usa punto como separador de miles)."""
+    """Convierte un número entero a formato $xx.xxx CLP"""
     if valor_int is None:
         return ""
-    s = f"{valor_int:,}"          # produce "84,600"
-    s = s.replace(",", ".")       # cambia a "84.600"
-    return f"${s} CLP"
+    return f"${valor_int:,}".replace(",", ".")
 
 def limpiar_nombre(titulo):
     """
@@ -58,23 +56,26 @@ def limpiar_nombre(titulo):
     return s, foil
 
 def extraer_precio(texto_precio):
-    """
-    Extrae cifra numérica desde texto tipo "$490" o "$1.234" etc.
-    Retorna entero en CLP (ej: 490) o None si falla.
-    """
     if not texto_precio:
         return None
-    # Extraer sólo dígitos (y posibles separadores), después convertir
-    # Primero reemplazar posibles puntos/commas por vacío
-    # Pero para no romper números con miles, extraemos todos los dígitos y juntamos
-    digits = re.findall(r"\d+", texto_precio)
-    if not digits:
+
+    # Extraer todos los números (ignora puntos y comas)
+    precios = re.findall(r"\d[\d\.]*", texto_precio)
+    if not precios:
         return None
-    number = "".join(digits)  # e.g. ["84", "600"] -> "84600" or ["490"] -> "490"
-    try:
-        return int(number)
-    except ValueError:
+
+    precios_int = []
+    for p in precios:
+        try:
+            precios_int.append(int(p.replace(".", "")))
+        except ValueError:
+            continue
+
+    if not precios_int:
         return None
+
+    # Tomar el precio más bajo en caso de rango
+    return min(precios_int)
 
 def obtener_productos_por_pagina(numero_pagina):
     url = BASE_START.format(numero_pagina)
@@ -165,11 +166,6 @@ def descargar_imagenes(productos, carpeta):
     print(f"✅ Imágenes descargadas: {descargadas}/{total}")
 
 def main():
-    # Pregunta inicial para iniciar scraping
-    if not preguntar_si_no("¿Deseas iniciar el scraping de HunterCardTCG?"):
-        print("✋ Operación cancelada por el usuario.")
-        return
-
     pagina = 1
     todos = []
     print("🔎 Iniciando scraping...")

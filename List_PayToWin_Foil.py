@@ -13,7 +13,9 @@ def formatear_moneda(valor):
     """Convierte un número entero a formato $xx.xxx CLP"""
     if valor is None:
         return ""
-    return f"${valor:,} CLP".replace(",", ".")
+    # Formatea con separador de miles y agrega el signo $
+    return f"${valor:,}".replace(",", ".")
+
 
 def obtener_productos(pagina):
     url = URL_TEMPLATE.format(pagina)
