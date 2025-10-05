@@ -18,6 +18,8 @@ def buscar(nombre_producto):
         print(f"{Colores.AZUL}Buscando en OasisGames...{Colores.RESET}", end="")
         response = requests.get(url_busqueda, headers={"User-Agent": "Mozilla/5.0"})
         soup = BeautifulSoup(response.content, 'html.parser')
+        
+        # Buscar los productos
         productos = soup.select("div.product-card-list2__details.product-description a div.grid-view-item__title")
 
         encontrado = False
@@ -28,11 +30,28 @@ def buscar(nombre_producto):
                 url_producto = link_tag['href'] if link_tag else url_busqueda
                 if url_producto.startswith("/"):
                     url_producto = base_url + url_producto
-                precio_tag = producto_tag.find_next("span", class_="product-price__price")
-                precio = precio_tag.get_text(strip=True) if precio_tag else "-"
+                
+                # Obtener la página del producto para verificar stock
+                prod_resp = requests.get(url_producto, headers={"User-Agent": "Mozilla/5.0"})
+                prod_soup = BeautifulSoup(prod_resp.content, 'html.parser')
+                
+                opciones = prod_soup.select("select.product-form__variants option")
+                disponible = "No"
+                precio = "-"
+                
+                for opcion in opciones:
+                    stock = int(opcion.get("data-stock", "0"))
+                    if stock > 0:
+                        disponible = "Sí"
+                        # Intentar tomar precio
+                        precio_tag = prod_soup.select_one("span.product-price__price")
+                        if precio_tag:
+                            precio = precio_tag.get_text(strip=True)
+                        break
+                
                 resultado = {
                     "Tienda": "OasisGames",
-                    "Disponible": "Sí",
+                    "Disponible": disponible,
                     "Producto": nombre,
                     "Precio": precio,
                     "URL": url_producto
@@ -49,7 +68,8 @@ def buscar(nombre_producto):
                 "URL": url_busqueda
             }
 
-    except Exception:
+    except Exception as e:
+        print(f"\nError: {e}")
         resultado = {
             "Tienda": "OasisGames",
             "Disponible": "No",

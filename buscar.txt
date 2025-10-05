@@ -1,3 +1,82 @@
-Battershield Warrior
-ITALIAN The Tabernacle at Pendrell Vale
-Gaea's Cradle
+Ancient Tomb
+Ashnod’s Altar
+Ayara, First of Locthwain
+Basalt Monolith
+Bastion of Remembrance
+Bitterblossom
+Blood Artist
+Bloodghast
+Bolas's Citadel
+Braids, Arisen Nightmare
+Braids, Cabal Minion
+Cabal Ritual
+Cabal Stronghold
+Carrion Feeder
+Cavern of Souls
+Chittering Witch
+Crowded Crypt
+Crypt Ghast
+Crypt of Agadeem
+Culling the Weak
+Damnation
+Dark Ritual
+Deadly Dispute
+Deadly Rollick
+Demonic Tutor
+Diabolic Intent
+Dreadhorde Invasion
+Drivnod, Carnage Dominus
+Elixir
+Exsanguinate
+Feed the Swarm
+Ghoulish Procession
+Gisa, Glorious Resurrector
+Gisa, the Hellraiser
+Grave Pact
+Gravecrawler
+Gutterbones
+High Market
+Imp's Mischief
+Innocent Blood
+Jadar, Ghoulcaller of Nephalia
+Jet Medallion
+Midgar, City of Mako
+Nether Traitor
+Nine-Lives Familiar
+Ophiomancer
+Pawn of Ulamog
+Phyrexian Altar
+Phyrexian Arena
+Phyrexian Tower
+Pitiless Plunderer
+Plaguecrafter
+Priest of Forgotten Gods
+Reanimate
+Reassembling Skeleton
+Ring of the Lucii
+Sheoldred, the Apocalypse
+Sifter of Skulls
+Skullclamp
+Starting Town
+Susur Secundi, Void Altar
+Swiftfoot Boots
+Syr Konrad, the Grim
+Takenuma, Abandoned Mire
+Tevesh Szat, Doom of Fools
+The Final Days
+The Masamune
+The Meathook Massacre
+Thought Vessel
+Torment of Hailfire
+Toxic Deluge
+Urza's Cave
+Vampiric Tutor
+Vayne's Treachery
+Victimize
+Village Rites
+Zodiark, Umbral God
+Zulaport Cutthroat
+Sheoldred, Whispering One
+Grave Titan
+Phyrexian Reclamation
+Kokusho, the Evening Star
