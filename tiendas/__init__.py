@@ -7,6 +7,7 @@ from .tiendalacomarca import metadata as tlc_metadata
 from .paytowin import metadata as ptw_metadata
 from .rivendelelconcilio import metadata as rc_metadata
 from .magic4ever_scraper import metadata as m4e_metadata
+from .cartasmagicsur import metadata as cms_metadata 
 
 # Lista de todas las tiendas
 tiendas = [
@@ -18,5 +19,6 @@ tiendas = [
     tlc_metadata,
     ptw_metadata,
     rc_metadata,
-    m4e_metadata
+    m4e_metadata,
+    cms_metadata 
 ]
