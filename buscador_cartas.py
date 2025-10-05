@@ -1,3 +1,6 @@
+import os
+import csv
+from datetime import datetime
 from tiendas import tiendas
 
 # --- Colores para la terminal ---
@@ -41,6 +44,14 @@ def mostrar_resultados(resultados):
         for r in no_disponibles:
             print(f"   {r['Tienda']} | {r['Producto']} | {r['Precio']} | {r['URL']}")
 
+# --- Función para obtener mejor opción por precio ---
+def obtener_mejor_precio(resultados):
+    disponibles = [r for r in resultados if r['Disponible'] == "Sí" and r['Precio'] != "-"]
+    if not disponibles:
+        return None
+    mejor = min(disponibles, key=lambda r: int(''.join(filter(str.isdigit, r['Precio']))))
+    return mejor
+
 # --- Preguntar si desea buscar 1 carta o varias ---
 while True:
     opcion = input("¿Desea buscar 1 carta o varias? (1/+): ").strip()
@@ -76,6 +87,12 @@ else:
             else:
                 print("Entrada inválida. Ingrese un número mayor que 0 o '-'.")
 
+        # Crear carpeta Ficheros si no existe
+        os.makedirs("Ficheros", exist_ok=True)
+
+        # Preparar datos para CSV
+        datos_csv = []
+
         for i in range(0, len(cartas), batch_size):
             batch = cartas[i:i+batch_size]
             for carta in batch:
@@ -86,13 +103,52 @@ else:
                     resultados.append(resultado)
                 mostrar_resultados(resultados)
 
+                mejor = obtener_mejor_precio(resultados)
+                if mejor:
+                    datos_csv.append({
+                        "Nombre de la carta": carta,
+                        "Tienda": mejor["Tienda"],
+                        "Precio": mejor["Precio"],
+                        "URL": mejor["URL"]
+                    })
+
             # Pausar después de cada batch si hay más cartas y la opción no es "-"
             if batch_size != len(cartas) and i + batch_size < len(cartas):
                 while True:
-                    continuar = input("\nDesea continuar con el siguiente batch de cartas? [S]: ").strip().upper()
+                    continuar = input("\nDesea continuar con el siguiente batch de cartas? [S/N]: ").strip().upper()
                     if continuar == "S":
                         break
+                    elif continuar == "N":
+                        # Guardar CSV antes de salir
+                        if datos_csv:
+                            now = datetime.now()
+                            fecha = now.strftime("%Y-%m-%d")
+                            hora = now.strftime("%H-%M")
+                            nombre_archivo = f"Ficheros/Ficha_Cartas_{len(datos_csv)}____{fecha}___{hora}.csv"
+
+                            with open(nombre_archivo, "w", newline="", encoding="utf-8") as f:
+                                writer = csv.DictWriter(f, fieldnames=["Nombre de la carta", "Tienda", "Precio", "URL"])
+                                writer.writeheader()
+                                writer.writerows(datos_csv)
+
+                            print(f"\n✅ Datos guardados en: {nombre_archivo}")
+                        exit()
                     else:
-                        print("Ingrese 'S' para continuar con el siguiente batch.")
+                        print("Ingrese 'S' para continuar o 'N' para detener y guardar.")
+
+        # Guardar CSV al final si llegó al último batch
+        if datos_csv:
+            now = datetime.now()
+            fecha = now.strftime("%Y-%m-%d")
+            hora = now.strftime("%H-%M")
+            nombre_archivo = f"Ficheros/Ficha_Cartas_{len(datos_csv)}____{fecha}___{hora}.csv"
+
+            with open(nombre_archivo, "w", newline="", encoding="utf-8") as f:
+                writer = csv.DictWriter(f, fieldnames=["Nombre de la carta", "Tienda", "Precio", "URL"])
+                writer.writeheader()
+                writer.writerows(datos_csv)
+
+            print(f"\n✅ Datos guardados en: {nombre_archivo}")
+
     except FileNotFoundError:
         print("No se encontró el archivo 'buscar.txt'. Asegúrese de que exista en el mismo directorio.")
