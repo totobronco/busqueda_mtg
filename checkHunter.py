@@ -1,12 +1,13 @@
 import requests
 from bs4 import BeautifulSoup
+import re
 
 # Colores ANSI
 VERDE = "\033[92m"
 ROJO = "\033[91m"
 RESET = "\033[0m"
 
-# URL base (solo cambia el número de página)
+# URL base
 BASE_URL = "https://www.huntercardtcg.com/categoria-producto/mtg/mtg-singles/page/{}/?orderby=price"
 
 headers = {
@@ -22,6 +23,15 @@ while True:
     else:
         print("⚠️ Opción inválida. Por favor escribe 'S' o 'N'.")
 
+# 🔸 Preguntar si desea mostrar el contenido entre paréntesis
+while True:
+    opcion_parentesis = input("¿Deseas mostrar el texto entre paréntesis (como '(Foil)' o '(Showcase Foil)')? (S/N): ").strip().lower()
+    if opcion_parentesis in ["s", "n"]:
+        mostrar_parentesis = (opcion_parentesis == "s")
+        break
+    else:
+        print("⚠️ Opción inválida. Por favor escribe 'S' o 'N'.")
+
 # 🔸 Preguntar por precio máximo
 while True:
     precio_input = input("Ingresa precio máximo o '-' para no limitar: ").strip()
@@ -33,6 +43,15 @@ while True:
         break
     else:
         print("⚠️ Solo puedes ingresar un número o '-'.")
+
+# 🔸 Preguntar si quiere mostrar solo los nombres
+while True:
+    opcion_nombres = input("¿Deseas mostrar solo los nombres? (S/N): ").strip().lower()
+    if opcion_nombres in ["s", "n"]:
+        solo_nombres = (opcion_nombres == "s")
+        break
+    else:
+        print("⚠️ Opción inválida. Por favor escribe 'S' o 'N'.")
 
 pagina = 1
 total_productos = 0
@@ -66,7 +85,7 @@ while True:
             try:
                 precio_num = int(precio_texto)
             except ValueError:
-                continue  # si no se puede convertir el precio, salta
+                continue  # si no se puede convertir el precio, se salta
 
             # Detectar si es Foil
             es_foil = "foil" in nombre_completo.lower()
@@ -78,10 +97,19 @@ while True:
             if precio_max is not None and precio_num > precio_max:
                 continue
 
-            # Obtener solo el primer nombre antes del primer "–"
+            # Limpiar nombre si no se quieren ver los paréntesis
+            if not mostrar_parentesis:
+                nombre_completo = re.sub(r"\s*\(.*?\)", "", nombre_completo)
+
+            # Obtener solo la primera parte del nombre antes del primer "–"
             nombre_simple = nombre_completo.split("–")[0].strip()
 
-            print(f"{nombre_simple} - ${precio_num} - {foil_symbol}")
+            # Mostrar según si quiere solo nombres o todo
+            if solo_nombres:
+                print(f"{nombre_simple}")
+            else:
+                print(f"{nombre_simple} - ${precio_num} - {foil_symbol}")
+
             total_productos += 1
 
     pagina += 1
