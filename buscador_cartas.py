@@ -24,7 +24,6 @@ def mostrar_resultados(resultados):
         # Buscar precio mínimo
         precios = []
         for r in disponibles:
-            # Extraer solo números del precio
             precio_num = int(''.join(filter(str.isdigit, r['Precio']))) if r['Precio'] != "-" else float('inf')
             precios.append(precio_num)
         precio_min = min(precios)
@@ -65,7 +64,18 @@ else:
         with open("buscar.txt", "r", encoding="utf-8") as f:
             cartas = [line.strip() for line in f if line.strip()]
 
-        batch_size = 3
+        # Preguntar cada cuántas cartas pausar
+        while True:
+            pausa = input("¿Cada cuántas cartas desea pausar? (Ingrese un número >0 o '-' para todas): ").strip()
+            if pausa == "-":
+                batch_size = len(cartas)
+                break
+            elif pausa.isdigit() and int(pausa) > 0:
+                batch_size = int(pausa)
+                break
+            else:
+                print("Entrada inválida. Ingrese un número mayor que 0 o '-'.")
+
         for i in range(0, len(cartas), batch_size):
             batch = cartas[i:i+batch_size]
             for carta in batch:
@@ -76,8 +86,8 @@ else:
                     resultados.append(resultado)
                 mostrar_resultados(resultados)
 
-            # Pausar después de cada batch si hay más cartas
-            if i + batch_size < len(cartas):
+            # Pausar después de cada batch si hay más cartas y la opción no es "-"
+            if batch_size != len(cartas) and i + batch_size < len(cartas):
                 while True:
                     continuar = input("\nDesea continuar con el siguiente batch de cartas? [S]: ").strip().upper()
                     if continuar == "S":
