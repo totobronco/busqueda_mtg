@@ -4,8 +4,12 @@ import json
 import csv
 import time
 import random
+import os
+from datetime import datetime
 
+# =========================================
 # ANSI colors
+# =========================================
 RED = "\033[91m"
 GREEN = "\033[92m"
 YELLOW = "\033[93m"
@@ -14,6 +18,9 @@ MAGENTA = "\033[95m"
 RESET = "\033[0m"
 BOLD = "\033[1m"
 
+# =========================================
+# Configuración
+# =========================================
 BASE_URL = "https://www.oasisgames.cl/collections/mtg-singles-instock?page={}"
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 TIMEOUT = 10
@@ -43,7 +50,9 @@ PAGINA_FRASES = [
     "Ritual de Spice completado"
 ]
 
-# Cabecera MTG con símbolos de mana
+# =========================================
+# Cabecera divertida
+# =========================================
 CABECERA = f"""
 {RED}{BOLD}
       ⬤ ⚪ 🔵 🔴 ⚫ 🔶 
@@ -51,15 +60,15 @@ CABECERA = f"""
   |  \/  | ____|_   _| |  _ \| | | |  / \  | \ | | ____|  \/  |
   | |\/| |  _|   | |   | |_) | | | | / _ \ |  \| |  _| | |\/| |
   | |  | | |___  | |   |  __/| |_| |/ ___ \| |\  | |___| |  | |
-  |_|  |_|_____| |_|   |_|    \___//_/   \_\_| \_|_____|_|  |_|
+  |_|  |_|_____| |_|   |_|    \___//_/   \_\_| \_|_____|_|  |_| 
 {RESET}
 {CYAN}🪄 Magic Scraper: Cosechando cartas como planeswalkers 🪄{RESET}
 """
-
 print(CABECERA)
 
-print(CABECERA)
-
+# =========================================
+# Funciones auxiliares
+# =========================================
 def detectar_foil(nombre):
     nombre_lower = nombre.lower()
     return "Sí" if "foil" in nombre_lower and "non-foil" not in nombre_lower else "No"
@@ -100,7 +109,8 @@ def obtener_cartas_de_pagina(pagina):
             continue
 
         nombre_original = nombre_tag.get_text(strip=True)
-        enlace_tag = prod.select_one("a.full-unstyled-link")
+
+        enlace_tag = prod.select_one("a[href*='/products/']")
         enlace = ""
         if enlace_tag:
             enlace = enlace_tag.get("href", "")
@@ -135,32 +145,37 @@ def obtener_cartas_de_pagina(pagina):
     time.sleep(random.uniform(1, 2))
     return cartas
 
-def scrapear_todas_las_paginas(archivo_salida="oasis_dune.csv"):
-    todas = []
+# =========================================
+# Función principal para recorrer todas las páginas
+# =========================================
+if __name__ == "__main__":
+    carpeta_salida = "Ficheros"
+    os.makedirs(carpeta_salida, exist_ok=True)
+    fecha_hora = datetime.now().strftime("%Y-%m-%d_%H-%M")
+    archivo_salida = os.path.join(carpeta_salida, f"List_Oasis_{fecha_hora}.csv")
+
+    todas_cartas = []
     pagina = 1
 
     while True:
         cartas = obtener_cartas_de_pagina(pagina)
         if not cartas:
-            print(f"{GREEN}✅ No hay más productos. Las arenas se calman.{RESET}")
+            print(f"{YELLOW}⚠️ No se encontraron cartas en la página {pagina}. Fin del scraping.{RESET}")
             break
 
-        todas.extend(cartas)
-        print(f"{MAGENTA}   ➕ {len(cartas)} cartas agregadas (Total: {len(todas)}){RESET}")
+        todas_cartas.extend(cartas)
+        print(f"{GREEN}✅ {len(cartas)} cartas capturadas en la página {pagina}.{RESET}")
         pagina += 1
 
-    if not todas:
-        print(f"{RED}❌ No se encontraron cartas para guardar.{RESET}")
-        return
+    # Guardar en CSV
+    if todas_cartas:
+        with open(archivo_salida, "w", newline="", encoding="utf-8") as f:
+            campos = ["nombre_original", "nombre", "foil", "precio", "url"]
+            writer = csv.DictWriter(f, fieldnames=campos)
+            writer.writeheader()
+            writer.writerows(todas_cartas)
 
-    with open(archivo_salida, "w", newline="", encoding="utf-8") as f:
-        campos = ["nombre_original", "nombre", "foil", "precio", "url"]
-        writer = csv.DictWriter(f, fieldnames=campos)
-        writer.writeheader()
-        writer.writerows(todas)
-
-    print(f"\n{GREEN}💾 {len(todas)} cartas guardadas en {CYAN}{archivo_salida}{RESET}")
-    print(f"{YELLOW}🌵 La cosecha de cartas en Arrakis ha terminado. ¡Que el Spice guíe tu mazo!{RESET}")
-
-if __name__ == "__main__":
-    scrapear_todas_las_paginas()
+        print(f"{CYAN}💾 Total de cartas capturadas: {len(todas_cartas)}{RESET}")
+        print(f"{CYAN}💾 Datos guardados en {archivo_salida}{RESET}")
+    else:
+        print(f"{RED}❌ No se capturaron cartas.{RESET}")

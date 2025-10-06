@@ -26,7 +26,7 @@ os.makedirs("Ficheros", exist_ok=True)
 
 # Nombre del archivo con fecha y hora
 fecha_hora = datetime.now().strftime("%Y-%m-%d_%H-%M")
-OUTPUT_FILE = os.path.join("Ficheros", f"List-gameofmagicsingles_{fecha_hora}.csv")
+OUTPUT_FILE = os.path.join("Ficheros", f"List_gameofmagicsingles_{fecha_hora}.csv")
 
 # Cabecera MTG
 CABECERA = f"""
