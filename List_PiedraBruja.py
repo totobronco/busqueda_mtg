@@ -6,6 +6,7 @@ import os
 from datetime import datetime
 import time
 import random
+import sys
 
 # ANSI colors
 RED = "\033[91m"
@@ -43,6 +44,30 @@ Skaven Scraper: ¡Ratas husmeando por cartas!
 
 print(CABECERA)
 
+# Frases estilo Skaven por página
+PAGINA_FRASES = [
+    "Página saqueada por el Clan Skryre",
+    "Regalos para la Gran Rata Cornuda",
+    "Túneles llenos de oro y cartas",
+    "Ratas traviesas encuentran secretos",
+    "El Gran Horned Rat sonríe",
+    "Pólvora y caos por doquier",
+    "Colmillos afilados y botín asegurado",
+    "Ratas sobre ruedas husmean tesoros",
+    "Bigotes y garras activan la pólvora",
+    "Cada carta es un experimento Skryre",
+    "El clan Moulder ruge con trampas",
+    "Más runas, más caos, más diversión",
+    "Túneles secretos llenos de sorpresas",
+    "Husmeando cada esquina como un experto",
+    "Ratas veloces encuentran el botín primero",
+    "Chisporroteos de energía y cartas caen",
+    "Gusanos y trampas protegen el oro",
+    "La Gran Rata sonríe ante nuestro saqueo",
+    "Colmillos y chispas guían nuestra misión",
+    "Siempre listos para robar más cartas"
+]
+
 def limpiar_nombre(nombre):
     nombre = re.sub(r'\s*\(.*?\)\s*', '', nombre)
     nombre = re.sub(r'\s*\d+$', '', nombre).strip()
@@ -60,9 +85,16 @@ def limpiar_precio(precio_texto):
     except ValueError:
         return 0
 
+def spinner_husmeando():
+    for c in "|/-\\":
+        sys.stdout.write(f"\r{YELLOW}🐀 Husmeando... {c}{RESET}")
+        sys.stdout.flush()
+        time.sleep(0.15)
+
 def obtener_datos_pagina(pagina):
     url = BASE_URL.format(pagina)
-    print(f"{YELLOW}🐀 Skaven husmeando la página {pagina}... {CYAN}{url}{RESET}")
+    spinner_husmeando()
+    print(f"\r{CYAN}🐀 Skaven husmeando la página {pagina}... {url}{RESET}")
     
     response = requests.get(url)
     if response.status_code != 200:
@@ -98,15 +130,10 @@ def obtener_datos_pagina(pagina):
             "url": url_producto
         })
     
-    # Mensajes Skaven divertidos al pasar página
-    frases = [
-        "¡Chasqueando bigotes por más oro!",
-        "El clan Skryre dice que hay más cartas por aquí...",
-        "¡Ratas en la tienda, cuidado con los precios!",
-        "Rattling para adelante, husmeando tesoros..."
-    ]
-    print(f"{MAGENTA}{random.choice(frases)}{RESET}")
-    time.sleep(random.uniform(0.5, 1.5))  # Pequeña pausa dramática
+    # Frase divertida por página
+    frase = PAGINA_FRASES[(pagina-1) % len(PAGINA_FRASES)]
+    print(f"{MAGENTA}Página {pagina}: {frase}{RESET}")
+    time.sleep(random.uniform(0.5, 1.5))  # Pausa dramática
     return data, True
 
 def guardar_csv(data):
@@ -130,7 +157,6 @@ def main():
     
     if all_data:
         guardar_csv(all_data)
-        # Mensaje final Skaven
         print(f"""
 {RED}{BOLD}
   ╔════════════════════════════════╗
