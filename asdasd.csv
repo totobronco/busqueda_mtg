@@ -1,0 +1,554 @@
+Nombre,Tipo,Costo,Función
+Sorin's Thirst,Instant,{1}{B},Inflige 2 de daño a criatura objetivo y ganas 2 vidas :contentReference[oaicite:0]{index=0}  
+Liliana's Steward,Creature — Zombie,{B},{T}, sacrificar: un oponente descarta una carta (sólo como hechizo de tipo conjuro) :contentReference[oaicite:1]{index=1}  
+Dimir House Guard,Creature — Skeleton,{3}{B},Fear; sacrifica una criatura: regenera Dimir House Guard :contentReference[oaicite:2]{index=2}  
+Grim Roustabout,Creature — Skeleton Warrior,{1}{B},Unleash (puede entrar con +1/+1 pero luego no puede bloquear) (interpretado)  
+Xu-Ifit, Osteoharmonist,Creature — ???,{T},“{T}: regresa una carta de criatura del cementerio al campo de batalla, se convierte en esqueleto y pierde habilidades” (interpretado)  
+Rakdos Ringleader,Creature — Skeleton Warrior,{4}{B}{R},First strike; cuando hace daño de combate a un jugador, ese jugador descarta una carta al azar (interpretado)  
+Visage of Dread // Dread Osseosaur,Artifact (transformable),{1}{B},Al entrar, el oponente revela su mano y eliges una carta de criatura o artefacto, ese jugador la descarta :contentReference[oaicite:3]{index=3}  
+Cult Conscript,Creature — Skeleton Warrior,{B},Entra girado; {1}{B}: si una criatura no esqueleto murió este turno, lo regresa del cementerio al campo de batalla (interpretado)  
+Death-Priest of Myrkul,Creature — Zombie Cleric,??,Efecto de muerte / sacrificio (pendiente de verificación)  
+Sanitarium Skeleton,Creature — Skeleton,??,Descarte / manipulación de mano (pendiente)  
+Unburial Rites,Sorcery,{4}{B},Regresa carta de criatura del cementerio al campo de batalla (también tiene **Flashback {3}{W}**) :contentReference[oaicite:4]{index=4}  
+Bloodline Culling,Instant,{1}{B},Una criatura objetivo recibe –5/–5 hasta fin del turno; o criaturas ficha objetivo reciben –2/–2 (interpretado)  
+Hobbling Zombie,Creature — Zombie,{2}{B},Deathtouch; cuando muere, crea ficha 2/2 Zombie con “decayed” (interpretado)  
+Charcoal Diamond,Artifact,{1},Entra girado; {T}: agregar {B} (produce maná negro) (interpretado)  
+Transmogrant Altar,Artifact,??,Permite sacrificar para transformar u otros efectos (pendiente)  
+Transmogrant Altar,Artifact,??,Mismo efecto (duplicado)  
+Mathas, Fiend Seeker,Legendary Creature — Vampire,{R}{W}{B},Menace; al comienzo de tu paso final, pon un “bounty counter” en criatura oponente; mientras tenga, “cuando muera, cada oponente robará una carta y ganará 2 vidas” :contentReference[oaicite:5]{index=5}  
+Persistent Specimen,Creature — Horror,??,Vuelve del cementerio / persistencia (pendiente)  
+Social Climber,Creature — Human Rogue,??,Manipulación de mesa (pendiente)  
+Nahiri's Sacrifice,Sorcery,??,Sacrificar / robar cartas (pendiente)  
+Wildwood Rebirth,Sorcery,??,Regenerar criaturas / tierras (pendiente)  
+Nylea's Presence,Enchantment / Aura,??,Dar habilidades de protección / bonus (pendiente)  
+Naturalize,Instant,{1}{G},Destruye artefacto o encantamiento  
+Naturalize,Instant,{1}{G},Destruye artefacto o encantamiento  
+Verdant Haven,Enchantment,??,Produce maná verde extra (interpretado)  
+Blinding Fog,Instant,??,Previene daño / protege criaturas (interpretado)  
+New Horizons,Enchantment,??,Produce maná / efectos de tierras (interpretado)  
+Slice in Twain,Instant,??,Remoción para criaturas emparejadas (pendiente)  
+Dune Diviner,Creature — Human Wizard,??,Manipula biblioteca / scry (pendiente)  
+Life Goes On,Enchantment,??,Cuando una criatura muere, robas cartas o ganas vida (pendiente)
+Feral Prowler,Creature — Cat,{2}{G},Vigilar / daña a criatura objetivo (interpretado) ([scryfall.com](https://scryfall.com/search?q=Feral+Prowler))
+Gaea's Blessing,Sorcery,{2}{G},Robas una carta, barajas tu cementerio en la biblioteca ([scryfall.com](https://scryfall.com/search?q=Gaea%27s+Blessing))
+Return to Nature,Instant,{1}{G},Destruye artefacto o encantamiento objetivo o exilia carta de artefacto/encantamiento en cementerio ([scryfall.com](https://scryfall.com/search?q=Return+to+Nature))
+Gingerbread Cabin,Land,–,{T}: Agrega {C}, entra girado; crea ficha 1/1 Gingerbread Creature (interpretado)
+Centaur Nurturer,Creature — Centaur Druid,{3}{G},Cuando entra al campo, puedes poner +1/+1 contador sobre criatura objetivo y robar carta (interpretado)
+Pulse of Murasa,Instant,{1}{G}{G},Regresa hasta dos cartas de criatura o tierra de tu cementerio a tu mano; gana vida ([scryfall.com](https://scryfall.com/search?q=Pulse+of+Murasa))
+Healer of the Glade,Creature — Elf Cleric,{1}{G},Ganas 2 vidas cada vez que otra criatura entra al campo bajo tu control ([scryfall.com](https://scryfall.com/search?q=Healer+of+the+Glade))
+Gift of Paradise,Enchantment — Aura,{G},Encantar tierra: gana vida y al girar la tierra puedes agregar maná de cualquier color ([scryfall.com](https://scryfall.com/search?q=Gift+of+Paradise))
+Overgrowth Elemental,Creature — Elemental,{3}{G},Si controlas una tierra, puedes poner contadores +1/+1 sobre él al entrar (interpretado)
+Sagu Wildling // Roost Seek,Creature — Werewolf,{1}{G},Transformación: crea token, da bonus o ataca ([scryfall.com](https://scryfall.com/search?q=Sagu+Wildling))
+Natural End,Instant,{2}{G},Destruye criatura objetivo; si controla artefacto/encantamiento, exílialo (interpretado)
+Mortus Strider,Creature — Zombie,{2}{B},Cuando muere, puedes devolver otra criatura del cementerio al campo de batalla ([scryfall.com](https://scryfall.com/search?q=Mortus+Strider))
+Mortus Strider,Creature — Zombie,{2}{B},Repetida, mismo efecto
+Pyroclasm,Instant,{1}{R},Inflige 2 daño a cada criatura (remoción masiva) ([scryfall.com](https://scryfall.com/search?q=Pyroclasm))
+Wilt,Instant,{1}{G},Destruye artefacto o encantamiento objetivo ([scryfall.com](https://scryfall.com/search?q=Wilt))
+The Binding of the Titans,Sorcery,{3}{G}{G},Exilia todas las criaturas de fuerza mayor a 3 (interpretado)
+Kazandu Nectarpot,Land,–,{T}: Produce {G} o {G}{G} si se sacrifica (interpretado)
+Mystic Repeal,Instant,{U},Regresa artefacto, encantamiento o criatura legendaria a la mano de su propietario ([scryfall.com](https://scryfall.com/search?q=Mystic+Repeal))
+Fertilid,Creature — Elf Druid,{3},{T}: Agrega {G}{G} o pone +1/+1 contador sobre criatura objetivo ([scryfall.com](https://scryfall.com/search?q=Fertilid))
+Dig Up the Body,Sorcery,{2}{B},Regresa carta de criatura del cementerio al campo de batalla, sacrifica otra criatura ([scryfall.com](https://scryfall.com/search?q=Dig+Up+the+Body))
+Roiling Regrowth,Sorcery,{4}{G},Busca en tu biblioteca hasta 3 cartas de tierra y ponlas en el campo de batalla giradas ([scryfall.com](https://scryfall.com/search?q=Roiling+Regrowth))
+Migration Path,Enchantment — Aura,{1}{G},Encantar criatura: obtiene +1/+1 y vuela (interpretado)
+Inspiring Bard,Creature — Human Bard,{2}{G},Cuando entra al campo, gana vida y puedes robar carta (interpretado)
+Harmonize,Sorcery,{2}{G}{G},Robas 3 cartas ([scryfall.com](https://scryfall.com/search?q=Harmonize))
+Bishop of the Bloodstained,Creature — Vampire Cleric,{2}{B},Cuando entra, cada jugador pierde 1 vida y ganas 1 vida ([scryfall.com](https://scryfall.com/search?q=Bishop+of+the+Bloodstained))
+Hound Tamer // Untamed Pup,Creature — Human, {1}{G},Cuando entra, crea token 2/2 Hound; transformación cambia stats ([scryfall.com](https://scryfall.com/search?q=Hound+Tamer))
+Path to the Festival,Instant,{1}{R},Sacrificar criatura: inflige 2 daño a cada criatura y jugador objetivo (interpretado)
+Dawnhart Rejuvenator,Creature — Elf Cleric,{1}{G},Regenera criatura objetivo / gana vida ([scryfall.com](https://scryfall.com/search?q=Dawnhart+Rejuvenator))
+Willow Geist,Creature — Spirit,{2}{W},Cuando entra, exilia criatura objetivo y gana vida (interpretado)
+Bird Admirer // Wing Shredder,Creature — Human,{1}{U},Transformación: crea token o da bonus al atacar (interpretado)
+Packsong Pup,Creature — Hound,{1}{R},Cuando entra al campo, daña 1 a criatura objetivo o jugador (interpretado) ([scryfall.com](https://scryfall.com/search?q=Packsong+Pup))  
+Weaver of Blossoms // Blossom-Clad Werewolf,Creature — Human Werewolf,{2}{G},Transformación: puede crear ficha o dar bonus a criaturas ([scryfall.com](https://scryfall.com/search?q=Weaver+of+Blossoms))  
+Infestation Expert // Infested Werewolf,Creature — Human Werewolf,{1}{B},Transformación: genera fichas de criatura y puede infligir daño ([scryfall.com](https://scryfall.com/search?q=Infestation+Expert))  
+Wolfkin Outcast // Wedding Crasher,Creature — Human Werewolf,{2}{G},Transformación: da +1/+1 a otras criaturas y genera token ([scryfall.com](https://scryfall.com/search?q=Wolfkin+Outcast))  
+Retrieve,Sorcery,{1}{B},Regresa criatura objetivo del cementerio a tu mano ([scryfall.com](https://scryfall.com/search?q=Retrieve))  
+Laid to Rest,Sorcery,{2}{W},Exilia criatura objetivo del cementerio y no puede ser regresada por habilidades de resurrección ([scryfall.com](https://scryfall.com/search?q=Laid+to+Rest))  
+Oakshade Stalker // Moonlit Ambusher,Creature — Human Werewolf,{2}{G},Transformación: da +2/+2 y crea ficha 2/2 ([scryfall.com](https://scryfall.com/search?q=Oakshade+Stalker))  
+Fog of War,Instant,{2}{U},Previene daño de combate hasta el final del turno ([scryfall.com](https://scryfall.com/search?q=Fog+of+War))  
+Azusa's Many Journeys,Creature — Human Scout,{3}{G},Cuando entra, puedes jugar hasta 2 tierras adicionales este turno ([scryfall.com](https://scryfall.com/search?q=Azusa%27s+Many+Journeys))  
+Blossom Prancer,Creature — Elf Druid,{1}{G},Cuando entra al campo, puedes poner +1/+1 contador en criatura objetivo ([scryfall.com](https://scryfall.com/search?q=Blossom+Prancer))  
+Boseiju Reaches Skyward,Land,–,{T}: Agrega {G} o {G}{G} para hechizo de criatura (interpretado) ([scryfall.com](https://scryfall.com/search?q=Boseiju+Reaches+Skyward))  
+Master's Rebuke,Instant,{1}{U},Regresa criatura objetivo a la mano y roba carta (interpretado) ([scryfall.com](https://scryfall.com/search?q=Master%27s+Rebuke))  
+Season of Renewal,Sorcery,{3}{G},Exilia hasta dos cartas de criatura objetivo y regresa a tu mano / gana vida (interpretado) ([scryfall.com](https://scryfall.com/search?q=Season+of+Renewal))  
+Obstinate Baloth,Creature — Beast,{4}{G},Cuando entra al campo, gana vida igual a su fuerza ([scryfall.com](https://scryfall.com/search?q=Obstinate+Baloth))  
+The Dragon-Kami Reborn,Enchantment — Saga,{2}{R}{G},Saga: crea fichas o da daño según capítulo (interpretado) ([scryfall.com](https://scryfall.com/search?q=The+Dragon-Kami+Reborn))  
+Deathless Ancient,Creature — Zombie,{4}{B},Si otra criatura muere, ganas vida y puede poner +1/+1 contador sobre él ([scryfall.com](https://scryfall.com/search?q=Deathless+Ancient))  
+Titania's Command,Sorcery,{3}{G},Elige dos: busca tierra, crea ficha, devuelve criatura o roba carta ([scryfall.com](https://scryfall.com/search?q=Titania%27s+Command))  
+Stew the Coneys,Sorcery,{1}{R},Hace 2 de daño a cada criatura objetivo (interpretado) ([scryfall.com](https://scryfall.com/search?q=Stew+the+Coneys))  
+Midnight Recovery,Sorcery,{1}{B},Regresa criatura del cementerio a tu mano (interpretado) ([scryfall.com](https://scryfall.com/search?q=Midnight+Recovery))  
+Many Partings,Instant,{X}{W},Exilia X criaturas objetivo, gana vida por cada criatura exiliada ([scryfall.com](https://scryfall.com/search?q=Many+Partings))  
+Revive the Shire,Sorcery,{2}{G},Busca hasta dos cartas de tierra y ponlas en el campo de batalla giradas ([scryfall.com](https://scryfall.com/search?q=Revive+the+Shire))  
+Many Partings,Instant,{X}{W},Repetida, misma función
+Curse of the Werefox,Enchantment — Aura,{2}{B},Encantar criatura: da –2/–2 y transforma bajo ciertas condiciones ([scryfall.com](https://scryfall.com/search?q=Curse+of+the+Werefox))  
+Commune with Nature,Sorcery,{2}{G},Busca hasta tres cartas de tierra y ponlas en tu mano ([scryfall.com](https://scryfall.com/search?q=Commune+with+Nature))  
+Welcome to Sweettooth,Sorcery,{1}{R},Crea ficha 1/1, inflige daño a jugador objetivo (interpretado) ([scryfall.com](https://scryfall.com/search?q=Welcome+to+Sweettooth))  
+Hollow Scavenger // Bakery Raid,Creature — Human,{1}{G},Transformación: genera ficha o da bonus a otras criaturas ([scryfall.com](https://scryfall.com/search?q=Hollow+Scavenger))  
+Tough Cookie,Creature — Human Soldier,{2}{W},Cuando entra al campo, gana vida y puede bloquear 2 criaturas pequeñas ([scryfall.com](https://scryfall.com/search?q=Tough+Cookie))  
+Spider Food,Enchantment — Aura,{2}{B},Encantar criatura: cuando muere, inflige daño al oponente igual a su fuerza (interpretado) ([scryfall.com](https://scryfall.com/search?q=Spider+Food))  
+Stormkeld Vanguard // Bear Down,Creature — Human Warrior,{2}{R},Transformación: da +X/+X a tus criaturas o genera token de criatura (interpretado) ([scryfall.com](https://scryfall.com/search?q=Stormkeld+Vanguard))  
+Brandywine Farmer,Creature — Human Peasant,{1}{G},Cuando entra, puedes buscar tierra básica y ponerla en el campo de batalla ([scryfall.com](https://scryfall.com/search?q=Brandywine+Farmer))
+Demon of Loathing,Creature — Demon,{3}{B}{R},Flying; cuando entra al campo, inflige daño a criatura objetivo o jugador ([scryfall.com](https://scryfall.com/search?q=Demon+of+Loathing))
+Doomed Dissenter,Creature — Human Cleric,{1}{B},Cuando muere, crea ficha 1/1 Spirit blanco con lifelink ([scryfall.com](https://scryfall.com/search?q=Doomed+Dissenter))
+Peregrin Took,Legendary Creature — Hobbit,{3}{G},Gana vida y permite robar carta al entrar al campo ([scryfall.com](https://scryfall.com/search?q=Peregrin+Took))
+Cosmic Hunger,Instant,{2}{G},Elige hasta una criatura objetivo; esa criatura obtiene +X/+X y gana vida igual a X ([scryfall.com](https://scryfall.com/search?q=Cosmic+Hunger))
+Perilous Forays,Sorcery,{1}{G},Sacrifica criatura objetivo; roba carta o activa efecto de sacrificio (interpretado)
+Forced Adaptation,Instant,{1}{G},Hasta dos criaturas objetivo cambian de tipo de criatura hasta final de turno ([scryfall.com](https://scryfall.com/search?q=Forced+Adaptation))
+Death's Approach,Instant,{1}{B},Exilia criatura objetivo; se puede sacrificar criatura propia para potenciar efecto (interpretado)
+Dark Bargain,Sorcery,{B},Cada jugador descarta dos cartas, luego robas tres cartas ([scryfall.com](https://scryfall.com/search?q=Dark+Bargain))
+Heaped Harvest,Sorcery,{3}{G},Busca hasta dos cartas de tierra en tu biblioteca y ponlas en tu mano ([scryfall.com](https://scryfall.com/search?q=Heaped+Harvest))
+For the Common Good,Instant,{1}{G},Hasta dos criaturas objetivo obtienen +1/+1 y ganan vida (interpretado)
+Greenhouse // Rickety Gazebo,Land,–,{T}: Agrega maná; puede transformarse para producir efecto extra (interpretado)
+Cautious Survivor,Creature — Human,{1}{G},Cuando entra, roba carta si controlas otra criatura (interpretado)
+Coordinated Clobbering,Instant,{1}{R},Inflige X daño a criatura o jugador y puedes dividir entre criaturas (interpretado)
+Grasping Longneck,Creature — Dinosaur,{3}{G},Trample; puede bloquear o proteger otras criaturas (interpretado)
+Insidious Fungus,Creature — Fungus,{1}{B},Cuando entra, exilia criatura objetivo hasta que salga del campo ([scryfall.com](https://scryfall.com/search?q=Insidious+Fungus))
+Eumidian Terrabotanist,Creature — Elf Druid,{2}{G},Cuando entra, puedes poner +1/+1 contador sobre criatura objetivo (interpretado)
+Premature Burial,Instant,{1}{B},Regresa criatura objetivo de tu cementerio al campo de batalla con -1/-1 contador ([scryfall.com](https://scryfall.com/search?q=Premature+Burial))
+Vampiric Rites,Sorcery,{2}{B},Sacrificar criatura: robas dos cartas y ganas vida igual al coste de maná convertido (interpretado)
+Cremate,Sorcery,{1}{B},Exilia carta objetivo del cementerio y roba carta ([scryfall.com](https://scryfall.com/search?q=Cremate))
+Peerless Recycling,Instant,{2}{G},Regresa carta de criatura objetivo del cementerio a tu mano (interpretado)
+Drainpipe Vermin,Creature — Rat,{1}{B},Deathtouch; cuando entra al campo, descarta carta objetivo de oponente ([scryfall.com](https://scryfall.com/search?q=Drainpipe+Vermin))
+Mind Rot,Sorcery,{2}{B},Oponente objetivo descarta dos cartas ([scryfall.com](https://scryfall.com/search?q=Mind+Rot))
+Grim Roustabout,Creature — Skeleton Warrior,{1}{B},Unleash; entra con +1/+1 contador y puede sacrificarse para obtener ventaja (interpretado)
+Deviant Glee,Sorcery,{B},Oponente pierde 2 vidas y tú ganas 2 vidas ([scryfall.com](https://scryfall.com/search?q=Deviant+Glee))
+Rakdos Ringleader,Creature — Human Pirate,{3}{B}{R},Cuando entra al campo, revela las cinco cartas superiores de tu biblioteca; descarta cartas de criatura no humana y pone en la mano cartas de criatura humana (interpretado)
+Assassin's Strike,Instant,{1}{B},Destruye criatura objetivo con fuerza 2 o menos; si lanzas desde la mano de Dimir House Guard, tiene efecto adicional (interpretado)
+Slum Reaper,Creature — Zombie,{2}{B},Cuando entra o muere, crea ficha 1/1 Zombie (interpretado)
+Dark Revenant,Creature — Zombie,{2}{B},Cuando otra criatura muere, puede infligir 1 daño a jugador objetivo (interpretado)
+Ordeal of Erebos,Enchantment — Aura,{B},Encanta criatura; al morir, exilia otras criaturas objetivo (interpretado)
+Viper's Kiss,Instant,{B},Inflige 1 daño a criatura y da –1/–1 hasta fin de turno ([scryfall.com](https://scryfall.com/search?q=Viper%27s+Kiss))
+Boon of Erebos,Instant,{1}{B},Gana vida igual a la fuerza de criatura objetivo; criatura gana deathtouch hasta fin de turno ([scryfall.com](https://scryfall.com/search?q=Boon+of+Erebos))
+Rage of Purphoros,Instant,{R},Inflige X daño dividido como quieras entre cualquier número de criaturas y jugadores ([scryfall.com](https://scryfall.com/search?q=Rage+of+Purphoros))
+Dark Betrayal,Instant,{B},Oponente objetivo descarta carta y pierde 2 vidas ([scryfall.com](https://scryfall.com/search?q=Dark+Betrayal))
+Lightning Strike,Instant,{1}{R},Inflige 3 daño a criatura o jugador ([scryfall.com](https://scryfall.com/search?q=Lightning+Strike))
+Pharika's Cure,Instant,{B},Exilia carta de criatura objetivo o gana vida ([scryfall.com](https://scryfall.com/search?q=Pharika%27s+Cure))
+Tormented Hero,Creature — Human Cleric,{2}{B},Cuando muere, inflige 2 daño a jugador o criatura objetivo ([scryfall.com](https://scryfall.com/search?q=Tormented+Hero))
+Disciple of Phenax,Creature — Human Cleric,{1}{B},Cuando entra al campo, puede hacer que un jugador descarte cartas igual a fuerza objetivo ([scryfall.com](https://scryfall.com/search?q=Disciple+of+Phenax))
+Pharika's Mender,Creature — Human Cleric,{1}{B},Sacrifica criatura: ganas vida igual a su resistencia ([scryfall.com](https://scryfall.com/search?q=Pharika%27s+Mender))
+March of the Returned,Sorcery,{3}{B},Regresa X criaturas objetivo del cementerio al campo de batalla bajo tu control ([scryfall.com](https://scryfall.com/search?q=March+of+the+Returned))
+Mortus Strider,Creature — Zombie,{2}{B},Cuando muere, devuelve otra criatura del cementerio al campo de batalla ([scryfall.com](https://scryfall.com/search?q=Mortus+Strider))
+Homing Lightning,Instant,{1}{R},Inflige 4 daño a criatura objetivo ([scryfall.com](https://scryfall.com/search?q=Homing+Lightning))
+Mental Vapors,Sorcery,{B},Oponente objetivo descarta dos cartas ([scryfall.com](https://scryfall.com/search?q=Mental+Vapors))
+Corpse Blockade,Creature — Zombie,{2}{B},Cuando otra criatura muere, gana +1/+1 y exilia carta objetivo (interpretado)
+Balustrade Spy,Creature — Human Rogue,{1}{B},Cuando entra, mira la mano de un oponente y roba carta (interpretado)
+Mark for Death,Instant,{1}{B},Exilia criatura objetivo hasta fin de turno o la destruye si es de fuerza ≤2 ([scryfall.com](https://scryfall.com/search?q=Mark+for+Death))
+Dying Wish,Instant,{1}{B},Robas dos cartas y pierdes 1 vida por cada carta exiliada (interpretado)
+Hellraiser Goblin,Creature — Goblin,{2}{R},Cuando entra, inflige 1 daño a cada jugador (interpretado)
+One Thousand Lashes,Instant,{1}{W},Inflige 5 daño a criatura objetivo y gana vida igual al daño infligido ([scryfall.com](https://scryfall.com/search?q=One+Thousand+Lashes))
+Massive Raid,Sorcery,{2}{R},Inflige X daño dividido entre cualquier número de criaturas y jugadores (interpretado)
+Slate Street Ruffian,Creature — Human Rogue,{1}{B},Cuando entra, puede robar carta o infligir 1 daño a jugador objetivo (interpretado)
+Contaminated Ground,Enchantment,{1}{B},Al comienzo de tu mantenimiento, exilia criatura objetivo con fuerza ≤2 (interpretado)
+Grisly Spectacle,Sorcery,{1}{B},Exilia carta objetivo del cementerio y roba carta ([scryfall.com](https://scryfall.com/search?q=Grisly+Spectacle))
+Structural Collapse,Sorcery,{2}{R},Destruye artefacto objetivo; inflige 2 daño a su controlador (interpretado)
+Fanatic of Mogis,Creature — Human Minotaur,{3}{R},Cuando ataca, inflige 1 daño a jugador objetivo ([scryfall.com](https://scryfall.com/search?q=Fanatic+of+Mogis))
+Undercity Plague,Sorcery,{1}{B},Oponente pierde 2 vidas y sacrifica criatura objetivo ([scryfall.com](https://scryfall.com/search?q=Undercity+Plague))
+Soul Ransom,Enchantment — Aura,{2}{B},Encantar criatura: cuando muere, exilia otra criatura y el controlador pierde vida (interpretado)
+Gray Merchant of Asphodel,Creature — Zombie,{3}{B},Cuando entra, cada jugador pierde vida igual a tu devoción a negro y tú ganas vida igual ([scryfall.com](https://scryfall.com/search?q=Gray+Merchant+of+Asphodel))
+Underworld Cerberus,Creature — Hound,{3}{B},Cuando entra, exilia hasta dos criaturas objetivo de cementerios; deathtouch ([scryfall.com](https://scryfall.com/search?q=Underworld+Cerberus))
+Walk the Plank,Instant,{1}{R},Exilia criatura objetivo y su controlador recibe 3 daño ([scryfall.com](https://scryfall.com/search?q=Walk+the+Plank))
+Mark of the Vampire,Enchantment — Aura,{B},Encanta criatura: obtiene +1/+1 y lifelink, otras criaturas que mueran bajo tu control ganan vida (interpretado)
+Duress,Sorcery,{B},Oponente revela su mano y descarta carta no criatura ni tierra ([scryfall.com](https://scryfall.com/search?q=Duress))
+Boneyard Parley,Sorcery,{3}{B},Robas una carta y cada jugador descarta una carta; si la criatura es un Zombie, efecto adicional (interpretado)
+Wanted Scoundrels,Creature — Human Pirate,{1}{B},Cuando entra al campo, roba carta si controlas otra criatura pirata ([scryfall.com](https://scryfall.com/search?q=Wanted+Scoundrels))
+Dire Fleet Hoarder,Creature — Goblin Pirate,{2}{R},Cuando entra, roba carta o inflige 1 daño a jugador objetivo ([scryfall.com](https://scryfall.com/search?q=Dire+Fleet+Hoarder))
+Skulduggery,Instant,{B},Exilia criatura objetivo y puedes robar carta ([scryfall.com](https://scryfall.com/search?q=Skulduggery))
+March of the Drowned,Sorcery,{3}{B},Regresa X criaturas del cementerio al campo de batalla bajo tu control ([scryfall.com](https://scryfall.com/search?q=March+of+the+Drowned))
+Bloodcrazed Paladin,Creature — Human Knight,{1}{R},Cuando entra al campo, inflige 2 daño a criatura objetivo (interpretado)
+Vance's Blasting Cannons // Spitfire Bastion,Artifact,{3},Transformación: se convierte en tierra que puede infligir daño o robar carta ([scryfall.com](https://scryfall.com/search?q=Vance%27s+Blasting+Cannons))
+Costly Plunder,Sorcery,{2}{B},Robas carta y pierdes vida igual a X (interpretado)
+Skymarch Bloodletter,Creature — Vampire,{1}{B},Cuando entra al campo, exilia criatura objetivo de fuerza ≤2 ([scryfall.com](https://scryfall.com/search?q=Skymarch+Bloodletter))
+Arguel's Blood Fast // Temple of Aclazotz,Legendary Enchantment,{1},Transformación: genera maná negro y permite robar carta ([scryfall.com](https://scryfall.com/search?q=Arguel%27s+Blood+Fast))
+Heartless Pillage,Sorcery,{3}{B},Robas dos cartas y descartas una carta de tu mano ([scryfall.com](https://scryfall.com/search?q=Heartless+Pillage))
+Hijack,Instant,{1}{U},Toma control de criatura objetivo hasta el final del turno ([scryfall.com](https://scryfall.com/search?q=Hijack))
+Captivating Crew,Creature — Human Pirate,{2}{U},Cuando entra, toma control de criatura objetivo hasta fin de turno ([scryfall.com](https://scryfall.com/search?q=Captivating+Crew))
+Sword-Point Diplomacy,Sorcery,{1}{W},Exilia criatura objetivo hasta tu siguiente turno ([scryfall.com](https://scryfall.com/search?q=Sword-Point+Diplomacy))
+Contract Killing,Instant,{2}{B},Destruye criatura objetivo de fuerza ≤4 ([scryfall.com](https://scryfall.com/search?q=Contract+Killing))
+Deadeye Tormentor,Creature — Human Rogue,{1}{B},Cuando entra, roba carta si controlas otra criatura Rogue ([scryfall.com](https://scryfall.com/search?q=Deadeye+Tormentor))
+Demolish,Sorcery,{2}{R},Destruye artefacto o tierra no básica objetivo ([scryfall.com](https://scryfall.com/search?q=Demolish))
+Apocalypse Demon,Creature — Demon,{5}{B}{B},Flying; cuando entra al campo, inflige 2 daño a cada jugador ([scryfall.com](https://scryfall.com/search?q=Apocalypse+Demon))
+Unraveling Mummy,Creature — Zombie,{2}{B},Cuando entra o muere, exilia criatura objetivo o pone +1/+1 contador (interpretado)
+Open Fire,Instant,{1}{R},Inflige 3 daño dividido entre hasta dos criaturas objetivo ([scryfall.com](https://scryfall.com/search?q=Open+Fire))
+Grind // Dust,Instant,{1}{B},Exilia criatura objetivo; si tiene fuerza ≥X, efecto adicional (interpretado)
+Ruin Rat,Creature — Rat,{1}{B},Cuando entra, descarta carta objetivo ([scryfall.com](https://scryfall.com/search?q=Ruin+Rat))
+Wretched Camel,Creature — Camel,{3}{G},Cuando entra, gana vida igual a su resistencia ([scryfall.com](https://scryfall.com/search?q=Wretched+Camel))
+Desert of the Glorified,Land,–,{T}: Agrega {W} o {B} y puede generar efecto de exilio (interpretado)
+Without Weakness,Sorcery,{1}{W},Gana vida y da +1/+1 a criatura objetivo hasta fin de turno ([scryfall.com](https://scryfall.com/search?q=Without+Weakness))
+Lurching Rotbeast,Creature — Zombie Beast,{4}{B},Cuando muere, puede devolver otra criatura Zombie del cementerio al campo de batalla ([scryfall.com](https://scryfall.com/search?q=Lurching+Rotbeast))
+Farm // Market,Land,–,{T}: Agrega {G} o {W} según fase del juego (interpretado)
+Ifnir Deadlands,Land,–,{T}: Agrega {B}; si pagas coste adicional, exilia criatura objetivo (interpretado)
+Accursed Horde,Creature — Zombie,{2}{B},Cuando entra, pone +1/+1 contador en otra criatura Zombie y gana deathtouch ([scryfall.com](https://scryfall.com/search?q=Accursed+Horde))
+Imminent Doom,Sorcery,{2}{B},Exilia criatura objetivo y causa que su controlador pierda vida ([scryfall.com](https://scryfall.com/search?q=Imminent+Doom))
+Merciless Eternal,Creature — Zombie,{2}{B},Cuando entra, cada jugador sacrifica criatura; gana fuerza por cada criatura sacrificada ([scryfall.com](https://scryfall.com/search?q=Merciless+Eternal))
+Claim // Fame,Instant,{1}{B},Exilia criatura objetivo; si fue exiliada de tu cementerio, puedes robar carta ([scryfall.com](https://scryfall.com/search?q=Claim+Fame))
+Doomfall,Instant,{1}{B},Exilia carta objetivo de criatura, instantáneo o encantamiento; su controlador pierde vida si es criatura ([scryfall.com](https://scryfall.com/search?q=Doomfall))
+Moaning Wall,Creature — Wall,{2}{B},Defensor; cuando entra, cada jugador pierde 1 vida ([scryfall.com](https://scryfall.com/search?q=Moaning+Wall))
+Consign // Oblivion,Sorcery,{2}{B},Exilia hasta dos criaturas objetivo o destruye criatura objetivo (interpretado)
+Torment of Venom,Sorcery,{2}{B},Oponente objetivo recibe daño y pierde vida por cada criatura negra que controles ([scryfall.com](https://scryfall.com/search?q=Torment+of+Venom))
+Reaver Ambush,Instant,{2}{B},Cuando lanzas, destruye criatura objetivo o exilia si cumple condición (interpretado)
+Mutiny,Instant,{2}{R},Tomas control de criatura objetivo hasta fin de turno y da +1/+0 (interpretado)
+Moment of Craving,Instant,{B},Exilia criatura o planeswalker objetivo y ganas 2 vidas ([scryfall.com](https://scryfall.com/search?q=Moment+of+Craving))
+Gruesome Fate,Sorcery,{2}{B},Exilia criatura objetivo y roba carta si fue negra ([scryfall.com](https://scryfall.com/search?q=Gruesome+Fate))
+Dark Inquiry,Instant,{B},Oponente objetivo revela su mano y descarta carta no criatura (interpretado)
+Golden Demise,Sorcery,{3}{B},Cada oponente sacrifica criatura y pierden vida igual a fuerza de la criatura sacrificada ([scryfall.com](https://scryfall.com/search?q=Golden+Demise))
+Vraska's Conquistador,Creature — Vampire Pirate,{2}{B}{B},Cuando entra, cada jugador pierde vida igual a fuerza de criatura objetivo (interpretado)
+Recover,Instant,{1}{B},Regresa criatura objetivo de tu cementerio al campo de batalla ([scryfall.com](https://scryfall.com/search?q=Recover))
+Caligo Skin-Witch,Creature — Human Wizard,{2}{B},Cuando entra, puedes exiliar criatura objetivo; si lo haces, ganas vida igual a su resistencia ([scryfall.com](https://scryfall.com/search?q=Caligo+Skin-Witch))
+Radiating Lightning,Instant,{1}{R},Inflige X daño dividido entre cualquier número de criaturas y jugadores ([scryfall.com](https://scryfall.com/search?q=Radiating+Lightning))
+Urgoros, the Empty One,Creature — Zombie,{3}{B}{B},Cuando entra, exilia criatura objetivo; si controlas otra criatura negra, puedes robar carta ([scryfall.com](https://scryfall.com/search?q=Urgoros+the+Empty+One))
+Slimefoot, the Stowaway,Legendary Creature — Fungus,{2}{B}{G},Cuando otra criatura muere, cada oponente pierde 1 vida y tú ganas 1 vida ([scryfall.com](https://scryfall.com/search?q=Slimefoot+the+Stowaway))
+The Flame of Keld,Enchantment — Aura,{1}{R},Encantar criatura; obtiene +2/+0 y da Haste; inflige daño cuando ataque (interpretado)
+Soul Salvage,Sorcery,{B},Exilia carta de criatura objetivo de tu cementerio y ponla en tu mano ([scryfall.com](https://scryfall.com/search?q=Soul+Salvage))
+Whisper, Blood Liturgist,Creature — Vampire Cleric,{2}{B},Cuando entra o muere, roba carta y pierdes vida igual a fuerza de criatura objetivo ([scryfall.com](https://scryfall.com/search?q=Whisper+Blood+Liturgist))
+Divest,Instant,{1}{B},Oponente objetivo revela su mano y descarta carta no criatura ni tierra ([scryfall.com](https://scryfall.com/search?q=Divest))
+Demonic Vigor,Instant,{B},Regresa criatura objetivo de tu cementerio al campo de batalla con -1/-1 contador ([scryfall.com](https://scryfall.com/search?q=Demonic+Vigor))
+Fight with Fire,Sorcery,{1}{R},Inflige 3 daño a objetivo; si X ≥3, inflige 3 daño más a cada oponente ([scryfall.com](https://scryfall.com/search?q=Fight+with+Fire))
+Blessing of Belzenlok,Instant,{B},Ganas vida igual a X y robar X cartas (interpretado)
+Cast Down,Instant,{1}{B},Destruye criatura objetivo que no sea legendaria ([scryfall.com](https://scryfall.com/search?q=Cast+Down))
+Vicious Offering,Instant,{3}{B},Paga X y sacrifica criatura objetivo; inflige X daño a jugador o criatura ([scryfall.com](https://scryfall.com/search?q=Vicious+Offering))
+Settle the Score,Instant,{2}{B},Destruye criatura objetivo y exilia otra si condición se cumple ([scryfall.com](https://scryfall.com/search?q=Settle+the+Score))
+Garna, the Bloodflame,Legendary Creature — Demon,{3}{B}{R},Flying; cuando entra, exilia criatura objetivo; si otra criatura muere, inflige daño a jugador ([scryfall.com](https://scryfall.com/search?q=Garna+the+Bloodflame))
+Thallid Soothsayer,Creature — Fungus,{1}{G},Cuando entra, cada jugador pierde 1 vida; si controlas otro Fungus, puedes ganar 1 vida ([scryfall.com](https://scryfall.com/search?q=Thallid+Soothsayer))
+Seismic Shift,Sorcery,{3}{R},Destruye artefacto o tierra objetivo; inflige 2 daño a jugador o criatura (interpretado)
+Deathbloom Thallid,Creature — Fungus,{2}{G},Cuando entra, pone +1/+1 contador en otra criatura Fungus; regenera si muere ([scryfall.com](https://scryfall.com/search?q=Deathbloom+Thallid))
+Arterial Flow,Instant,{B},Cada jugador sacrifica criatura; ganas vida igual a la fuerza de criatura sacrificada (interpretado)
+Dire Fleet Daredevil,Creature — Human Pirate,{2}{R},Cuando entra, puedes robar carta; si controlas otra criatura pirata, inflige 1 daño a jugador objetivo ([scryfall.com](https://scryfall.com/search?q=Dire+Fleet+Daredevil))
+Form of the Dinosaur,Sorcery,{2}{G},Transforma criatura objetivo en Dinosaurio 5/5 con trample hasta fin de turno ([scryfall.com](https://scryfall.com/search?q=Form+of+the+Dinosaur))
+Blood Sun,Enchantment,{1}{R},Todas las tierras que no sean básicas se vuelven Montañas en cuanto a tipo y color; afecta maná (interpretado)
+Torgaar, Famine Incarnate,Legendary Creature — Demon,{5}{B}{B},Flying; cada vez que otra criatura muere, jugador objetivo pierde 2 vidas ([scryfall.com](https://scryfall.com/search?q=Torgaar+Famine+Incarnate))
+Final Parting,Instant,{1}{B},Robas X cartas y exilias carta objetivo del cementerio (interpretado)
+Tetzimoc, Primal Death,Legendary Creature — Dinosaur,{6}{G}{G},Cuando entra, destruye todas las criaturas con fuerza menor o igual a 4; tiene trample ([scryfall.com](https://scryfall.com/search?q=Tetzimoc+Primal+Death))
+Brass's Bounty,Sorcery,{2}{G},Robas X cartas; si X ≥3, puedes poner carta de criatura de tu mano al campo de batalla (interpretado)
+Aid the Fallen,Sorcery,{1}{W},Regresa criatura objetivo de tu cementerio al campo de batalla (interpretado)
+Davriel's Shadowfugue,Sorcery,{2}{B},Exilia criatura objetivo y roba carta si es Zombie (interpretado)
+Herald of the Dreadhorde,Creature — Vampire,{2}{B},Flying; cada vez que una criatura muere, gana fuerza igual a su resistencia ([scryfall.com](https://scryfall.com/search?q=Herald+of+the+Dreadhorde))
+Ob Nixilis's Cruelty,Instant,{1}{B},Inflige 3 daño a criatura objetivo y oponente pierde 3 vidas (interpretado)
+Sorin's Thirst,Instant,{B},Inflige 2 daño a criatura o jugador y ganamos 2 vidas ([scryfall.com](https://scryfall.com/search?q=Sorin%27s+Thirst))
+Spark Reaper,Creature — Goblin,{2}{R},Haste; cuando entra, inflige 2 daño a jugador o criatura objetivo ([scryfall.com](https://scryfall.com/search?q=Spark+Reaper))
+Toll of the Invasion,Instant,{3}{B},Exilia criatura objetivo y su controlador pierde vida igual a su fuerza (interpretado)
+Unlikely Aid,Instant,{W},Gana 3 vidas; regresa criatura objetivo a tu mano si es necesario (interpretado)
+Vampire Opportunist,Creature — Vampire,{2}{B},Cuando entra, roba carta si controlas otra criatura Vampire ([scryfall.com](https://scryfall.com/search?q=Vampire+Opportunist))
+Blindblast,Instant,{2}{R},Inflige 3 daño a todas las criaturas objetivo (interpretado)
+Demolish,Sorcery,{2}{R},Destruye artefacto o tierra no básica objetivo ([scryfall.com](https://scryfall.com/search?q=Demolish))
+Grim Initiate,Creature — Human Wizard,{1}{B},Cuando entra, exilia criatura objetivo o roba carta (interpretado)
+Heartfire,Instant,{1}{R},Inflige 4 daño dividido entre cualquier número de criaturas y jugadores ([scryfall.com](https://scryfall.com/search?q=Heartfire))
+Honor the God-Pharaoh,Instant,{1}{B},Exilia criatura objetivo; si muere, cada jugador pierde 1 vida por cada criatura exiliada (interpretado)
+Jaya's Greeting,Instant,{R},Inflige 4 daño a cada oponente; si X ≥3, también a criaturas (interpretado)
+Bake into a Pie,Sorcery,{1}{R},Inflige 3 daño a criatura objetivo y si muere, roba carta ([scryfall.com](https://scryfall.com/search?q=Bake+into+a+Pie))
+Giant's Skewer,Instant,{3}{R},Inflige X daño a criatura objetivo o jugador y puedes robar carta (interpretado)
+Reaper of Night // Harvest Fear,Creature — Vampire,{2}{B},Cuando entra, exilia carta de criatura objetivo; si controlas otra criatura Vampire, robas carta ([scryfall.com](https://scryfall.com/search?q=Reaper+of+Night))
+Fling,Instant,{1}{R},Sacrifica criatura objetivo; inflige daño igual a su fuerza a cualquier objetivo ([scryfall.com](https://scryfall.com/search?q=Fling))
+Reave Soul,Instant,{B},Destruye criatura objetivo y ganas vida igual a su fuerza ([scryfall.com](https://scryfall.com/search?q=Reave+Soul))
+Memory Theft,Instant,{2}{U},Robas carta y tu oponente pierde carta de su mano (interpretado)
+Scorching Dragonfire,Instant,{1}{R},Inflige 3 daño a criatura objetivo; si se ha lanzado desde la mano de tu oponente, exilia (interpretado)
+Blow Your House Down,Instant,{1}{R},Inflige 3 daño a criatura objetivo; si es casa (interpretado)
+Bleeding Edge,Instant,{1}{R},Inflige daño a criatura objetivo igual a tu vida perdida (interpretado)
+Bond of Revival,Instant,{G},Regresa criatura objetivo de tu cementerio al campo de batalla ([scryfall.com](https://scryfall.com/search?q=Bond+of+Revival))
+Eternal Taskmaster,Creature — Human Soldier,{1}{B},Cuando entra, exilia criatura objetivo hasta el final del turno (interpretado)
+Liliana's Triumph,Instant,{1}{B},Destruye criatura objetivo; si es Zombie, puedes robar carta ([scryfall.com](https://scryfall.com/search?q=Liliana%27s+Triumph))
+Price of Betrayal,Instant,{1}{B},Inflige X daño a criatura objetivo y robas X cartas si sacrificas criatura (interpretado)
+Spark Harvest,Sorcery,{1}{R},Inflige daño a criatura objetivo igual a la fuerza de criatura que controlas (interpretado)
+Bond of Passion,Instant,{B},Exilia criatura objetivo de tu cementerio y regresa otra al campo de batalla ([scryfall.com](https://scryfall.com/search?q=Bond+of+Passion))
+Angrath's Rampage,Instant,{1}{R},Destruye criatura objetivo con coste de 2 o menos o pone -3/-0 contador ([scryfall.com](https://scryfall.com/search?q=Angrath%27s+Rampage))
+Tyrant's Scorn,Instant,{1}{B},Exilia criatura objetivo; si fuerza ≤3, puedes robar carta ([scryfall.com](https://scryfall.com/search?q=Tyrant%27s+Scorn))
+Epic Downfall,Instant,{1}{B},Destruye criatura o planeswalker objetivo que no sea legendario ([scryfall.com](https://scryfall.com/search?q=Epic+Downfall))
+Specter's Shriek,Instant,{B},Exilia criatura objetivo del cementerio; si es Zombie, gana +1/+1 ([scryfall.com](https://scryfall.com/search?q=Specter%27s+Shriek))
+Cauldron's Gift,Sorcery,{2}{B},Exilia criatura objetivo y pon en tu campo de batalla otra criatura desde tu cementerio ([scryfall.com](https://scryfall.com/search?q=Cauldron%27s+Gift))
+Forever Young,Sorcery,{1}{G},Regresa criatura objetivo de tu cementerio al campo de batalla y gana vida igual a su resistencia ([scryfall.com](https://scryfall.com/search?q=Forever+Young))
+Grumgully, the Generous,Creature — Goblin,{2}{R},Cuando entra, puedes dar +1/+1 a otra criatura o robar carta (interpretado)
+Act of Treason,Instant,{2}{R},Tomas control de criatura objetivo hasta fin de turno; se puede atacar (interpretado)
+Skullknocker Ogre,Creature — Ogre,{3}{R},Cuando entra al campo de batalla, inflige 2 daño a criatura objetivo (interpretado)
+Reckless Air Strike,Instant,{1}{R},Inflige 4 daño dividido entre hasta dos objetivos ([scryfall.com](https://scryfall.com/search?q=Reckless+Air+Strike))
+Bloodsoaked Altar,Artifact,{3},Sacrifica criatura: genera maná rojo ([scryfall.com](https://scryfall.com/search?q=Bloodsoaked+Altar))
+Epicure of Blood,Creature — Vampire,{1}{B},Cuando otra criatura muere, inflige 1 daño a jugador objetivo ([scryfall.com](https://scryfall.com/search?q=Epicure+of+Blood))
+Mind Rot,Sorcery,{2}{B},Oponente objetivo descarta dos cartas ([scryfall.com](https://scryfall.com/search?q=Mind+Rot))
+Ogre Siegebreaker,Creature — Ogre,{3}{R},Cuando entra, inflige 2 daño a jugador o criatura objetivo ([scryfall.com](https://scryfall.com/search?q=Ogre+Siegebreaker))
+Bloodthirsty Aerialist,Creature — Vampire,{1}{B},Flying; entra con +1/+1 contadores por cada otra criatura Vampire que controles ([scryfall.com](https://scryfall.com/search?q=Bloodthirsty+Aerialist))
+Agonizing Syphon,Instant,{1}{B},Inflige X daño a jugador objetivo y ganas vida igual a X (interpretado)
+Duress,Instant,{B},Oponente revela su mano y descarta carta no criatura ni tierra ([scryfall.com](https://scryfall.com/search?q=Duress))
+Mask of Immolation,Artifact — Equipment,{2},Equipa criatura objetivo: da +1/+0 y cuando equipada inflige 1 daño a jugador objetivo (interpretado)
+Chandra's Outrage,Instant,{2}{R},Inflige 4 daño a criatura objetivo; si es criatura roja, inflige 4 daño adicional ([scryfall.com](https://scryfall.com/search?q=Chandra%27s+Outrage))
+Gravedigger,Creature — Zombie,{2}{B},Cuando entra al campo de batalla, puedes devolver una carta de criatura de tu cementerio a tu mano ([scryfall.com](https://scryfall.com/search?q=Gravedigger))
+Sanitarium Skeleton,Creature — Skeleton,{1}{B},Sacrificio de otra criatura para regenerar esta criatura ([scryfall.com](https://scryfall.com/search?q=Sanitarium+Skeleton))
+Yarok's Fenlurker,Creature — Zombie Rogue,{3}{B},Cuando entra, exilia carta de criatura objetivo del cementerio de un oponente ([scryfall.com](https://scryfall.com/search?q=Yarok%27s+Fenlurker))
+Disfigure,Instant,{B},Reduce criatura objetivo -3/-3 hasta fin de turno ([scryfall.com](https://scryfall.com/search?q=Disfigure))
+Thought Distortion,Instant,{2}{B},Oponente descarta dos cartas si controlas un zombie ([scryfall.com](https://scryfall.com/search?q=Thought+Distortion))
+Unholy Indenture,Enchantment — Aura,{1}{B},Encantar criatura, criatura encantada obtiene +1/+2; si encantada muere, exilia criatura objetivo del oponente ([scryfall.com](https://scryfall.com/search?q=Unholy+Indenture))
+Chandra, Novice Pyromancer,Planeswalker — Chandra,{3}{R},+1: Inflige 1 daño a cada jugador; -2: Inflige 3 daño a criatura o jugador ([scryfall.com](https://scryfall.com/search?q=Chandra,+Novice+Pyromancer))
+Reduce to Ashes,Instant,{3}{R},Destruye criatura objetivo; si es roja, inflige 3 daño adicional ([scryfall.com](https://scryfall.com/search?q=Reduce+to+Ashes))
+Bone Splinters,Instant,{1}{B},Destruye criatura objetivo; oponente pierde vida igual a su resistencia si es zombie (interpretado)
+Tectonic Rift,Sorcery,{1}{R},Destruye tierra no básica objetivo; resto del daño interpretado como posible efecto de maná ([scryfall.com](https://scryfall.com/search?q=Tectonic+Rift))
+Soul Salvage,Sorcery,{B},Regresa criatura objetivo de tu cementerio al campo de batalla ([scryfall.com](https://scryfall.com/search?q=Soul+Salvage))
+Bladebrand,Artifact — Equipment,{2},Equipa criatura objetivo; da +2/+0 y puedes infligir daño a oponente igual a fuerza equipada (interpretado)
+Uncaged Fury,Instant,{3}{R},Inflige X daño a criatura objetivo, donde X es la fuerza de criatura que controlas (interpretado)
+Flame Sweep,Instant,{2}{R},Inflige 3 daño a cada criatura sin volar ([scryfall.com](https://scryfall.com/search?q=Flame+Sweep))
+The Elderspell,Sorcery,{5}{U},Exilia criatura objetivo; si controla criatura azul, puedes robar carta (interpretado)
+Deathsprout,Sorcery,{1}{G},Destruye criatura no negra objetivo; si criatura muere, puedes ganar vida (interpretado)
+Castle Embereth,Land,,Añade {R} o puede ser girada para aumentar fuerza de criaturas rojas (+1/+0) ([scryfall.com](https://scryfall.com/search?q=Castle+Embereth))
+Lochmere Serpent,Creature — Serpent,{6}{U},Flying; cuando entra al campo de batalla, puede infligir daño a criatura objetivo ([scryfall.com](https://scryfall.com/search?q=Lochmere+Serpent))
+Repeated Reverberation,Sorcery,{3}{U},Copia instantáneo o conjuro objetivo; puedes lanzar copia sin pagar coste ([scryfall.com](https://scryfall.com/search?q=Repeated+Reverberation))
+Moldervine Reclamation,Sorcery,{2}{G},Robas carta y puedes poner carta de criatura de tu cementerio al campo de batalla ([scryfall.com](https://scryfall.com/search?q=Moldervine+Reclamation))
+Chandra, Fire Artisan,Planeswalker — Chandra,{3}{R},+1: Inflige 1 daño a cada jugador; -2: Inflige 3 daño a criatura o jugador ([scryfall.com](https://scryfall.com/search?q=Chandra,+Fire+Artisan))
+Blood Curdle,Instant,{1}{B},Inflige 2 daño a criatura objetivo y oponente pierde 2 vidas ([scryfall.com](https://scryfall.com/search?q=Blood+Curdle))
+Cavern Whisperer,Creature — Orc Rogue,{2}{B},Cuando entra, inflige 1 daño a jugador objetivo; si controlas otra criatura Rogue, roba carta (interpretado)
+Memory Leak,Instant,{2}{U},Exilia criatura objetivo hasta fin de turno; roba carta (interpretado)
+Mutual Destruction,Instant,{1}{R},Cada jugador sacrifica criatura objetivo con fuerza ≤3 ([scryfall.com](https://scryfall.com/search?q=Mutual+Destruction))
+Fire Prophecy,Instant,{1}{R},Inflige 2 daño a criatura objetivo; si es roja, inflige 2 daño adicional (interpretado)
+Shredded Sails,Instant,{1}{U},Destruye artefacto objetivo; roba carta si controlas otra criatura azul (interpretado)
+Tentative Connection,Instant,{1}{G},Robas carta y devuelve criatura objetivo de tu cementerio al campo de batalla (interpretado)
+Aspect of Lamprey,Instant,{1}{B},Vuelves criatura objetivo +X/+X y ganamos vida igual al daño infligido ([scryfall.com](https://scryfall.com/search?q=Aspect+of+Lamprey))
+Lampad of Death's Vigil,Creature — Zombie,{2}{B},Cuando entra, exilia criatura objetivo del cementerio de un oponente ([scryfall.com](https://scryfall.com/search?q=Lampad+of+Death%27s+Vigil))
+Blood Beckoning,Instant,{1}{B},Robas carta por cada criatura que muera este turno
+Blood Price,Sorcery,{1}{B},Oponente sacrifica criatura objetivo; ganas vida igual a su fuerza
+Guul Draz Mucklord,Creature — Zombie,{4}{B},Sacrificio de criatura: inflige 1 daño a cada oponente
+Mind Drain,Instant,{3}{B},Oponente descarta X cartas donde X es el número de Zombies que controlas
+Oblivion's Hunger,Instant,{2}{B},Destruye criatura objetivo; si es Zombie, roba carta
+Pyroclastic Hellion,Creature — Elemental,{3}{R},Cuando entra, inflige 3 daño distribuido entre cualquier objetivo
+Pharika's Libation,Instant,{2}{B},Oponente pierde 2 vidas; puedes ganar 2 vidas
+Final Flare,Sorcery,{X}{R},Inflige X daño a cada criatura y cada jugador
+Iroas's Blessing,Instant,{1}{W},Previene todo el daño que se infligiría a criaturas objetivo este turno
+Irreverent Revelers,Creature — Satyr,{2}{R},Cuando entra al campo de batalla, inflige 2 daño a criatura objetivo
+Portent of Betrayal,Sorcery,{3}{U},Controla criatura objetivo hasta fin de turno; saca carta
+Sizzling Barrage,Instant,{X}{R},Inflige X daño dividido entre criaturas objetivo
+Adventure Awaits,Enchantment,{2}{G},Cada vez que una criatura entra al campo, puedes poner +1/+1 contadores en criatura objetivo
+Dire Fleet Hoarder,Creature — Human Pirate,{1}{B},Cuando entra, roba carta; si otra criatura Pirate murió este turno, roba otra carta
+Driver of the Dead,Creature — Zombie,{3}{B},Sacrificio de criatura: otra criatura objetivo gana +1/+1
+Heartless Pillage,Instant,{1}{B},Robas carta y descartas una; crea ficha Treasure si controlas Zombie
+Supernatural Stamina,Instant,{1}{G},Regenera criatura objetivo y si es Zombie, roba carta
+Unbreakable Bond,Enchantment,{1}{W},Siempre que una criatura equipada ataque, gana +1/+1 y puede equiparse gratis a otra criatura
+Clash of Titans,Sorcery,{4}{G},Busca criaturas de fuerza 4 o más y ponlas en el campo de batalla
+Back for More,Instant,{3}{B},Recupera criatura objetivo del cementerio al campo de batalla y la equipa con equipo objetivo
+Bushmeat Poacher,Creature — Human Rogue,{2}{B},Cuando entra al campo de batalla, inflige 1 daño a criatura objetivo
+Crypt Lurker,Creature — Zombie,{2}{B},Cuando entra al campo, puedes exiliar criatura objetivo del cementerio
+Deathbloom Thallid,Creature — Fungus,{1}{G},Cuando entra, pone contadores +1/+1 en otra criatura objetivo
+Infernal Scarring,Instant,{2}{R},Inflige 4 daño dividido entre cualquier número de criaturas y/o jugadores
+Liliana's Steward,Creature — Zombie,{2}{B},Sacrificio de otra criatura: roba carta; cuando muere, puede descartar para robar
+Malefic Scythe,Artifact — Equipment,{3},Equipa criatura objetivo; obtiene +3/+0 y da deathtouch
+Rise Again,Sorcery,{1}{B},Regresa criatura objetivo de tu cementerio al campo de batalla
+Witch's Cauldron,Artifact,{2},Sacrificio de criatura para generar ficha Treasure
+Soul Sear,Instant,{2}{R},Inflige daño a criatura objetivo igual a su fuerza
+Turn to Slag,Sorcery,{3}{R},Destruye artefacto o criatura objetivo
+Drag to the Underworld,Instant,{1}{B},Exilia criatura objetivo; su controlador pierde vida igual a su fuerza
+Elspeth's Nightmare,Sorcery,{2}{B},Descarta carta objetivo y destruye criatura objetivo con fuerza ≤3
+Enemy of Enlightenment,Creature — Human Monk,{1}{U},Cuando entra, puedes robar carta si un oponente tiene más cartas que tú
+Minion's Return,Instant,{1}{W},Regresa criatura objetivo al campo de batalla de su propietario bajo tu control
+Acquisitions Expert,Creature — Human Rogue,{3}{U},Cuando entra, roba carta; si otra criatura Rogue murió este turno, roba otra carta
+Pelakka Predation / Pelakka Caverns,Sorcery / Land,{2}{G},Regresa criatura objetivo de un oponente al campo de batalla; Land entra al campo con habilidad de maná
+Tymaret, Chosen from Death,Legendary Creature — Human Assassin,{1}{B}{R},Cuando otra criatura muere, cada jugador pierde 1 vida y gana 1 vida
+Careless Celebrant,Creature — Human Rogue,{1}{B},Cuando entra, inflige 1 daño a oponente y ganas 1 vida
+Dreamshaper Shaman,Creature — Elf Shaman,{2}{G},Cuando entra, coloca contadores +1/+1 en otra criatura objetivo
+Fateful End,Instant,{1}{B},Destruye criatura objetivo; no se puede regenerar
+Acolyte of Affliction,Creature — Vampire Cleric,{1}{B},Cuando entra, pone contadores -1/-1 en criatura objetivo
+Song-Mad Treachery / Song-Mad Ruins,Instant / Land,{2}{U},Exilia criatura objetivo; Land entra al campo con habilidad de maná
+Rise to Glory,Sorcery,{3}{W},Regresa criatura objetivo de tu cementerio al campo de batalla con +1/+1
+Tymaret, Chosen from Death,Legendary Creature — Human Assassin,{1}{B}{R},Cuando otra criatura muere, cada jugador pierde 1 vida y gana 1 vida
+Balduvian Rage,Instant,{R},Inflige daño a criatura objetivo igual a su fuerza
+Brimstone Volley,Instant,{X}{R},Inflige X daño dividido entre cualquier número de objetivos
+Dismantle,Instant,{1}{R},Destruye artefacto objetivo
+Renegade Tactics,Instant,{2}{R},Exilia criatura objetivo; puedes robar carta si controlas un Goblin
+Corpse Churn,Sorcery,{3}{B},Robas cartas y pones criaturas objetivo de tu cementerio en el campo de batalla
+Keskit, the Flesh Sculptor,Creature — Human Artificer,{2}{B},Cuando entra, puedes exiliar criatura objetivo y crear ficha Zombie
+Rummaging Goblin,Creature — Goblin,{1}{R},Cuando entra, roba carta si otra criatura Goblin murió este turno
+Spark Harvest,Sorcery,{3}{R},Inflige X daño a criatura objetivo y/o jugador igual a número de cartas en tu cementerio
+Bitter Revelation,Sorcery,{1}{B},Robas X cartas y pierdes X vidas
+Gilt-Leaf Winnower,Creature — Elf Warrior,{3}{G},Cuando entra, destruye criatura objetivo con fuerza ≤3
+Falthis, Shadowcat Familiar,Creature — Cat,{1}{B},Cuando entra, roba carta si controlas otra criatura
+Juri, Master of the Revue,Legendary Creature — Human Rogue,{3}{B},Cuando entra, roba carta y exilia criatura objetivo del cementerio de un oponente
+Burning Anger,Instant,{2}{R},Inflige 4 daño a criatura objetivo
+Humble Defector,Creature — Human Advisor,{2}{U},Cuando entra, puedes robar dos cartas y poner una de vuelta en la parte superior de tu biblioteca
+Elvish Doomsayer,Creature — Elf Shaman,{1}{G},Cuando entra, destruye artefacto o encantamiento objetivo
+Fleshbag Marauder,Creature — Human Warrior,{2}{B},Cuando entra, cada jugador sacrifica criatura objetivo
+Furnace Celebration,Sorcery,{2}{R},Inflige 3 daño a cada criatura y jugador; si controlas otra criatura roja, inflige 2 daño adicional
+Dragon Egg,Artifact — Egg,{3},Cuando Dragon Egg muere, crea ficha Dragon 2/2 con flying
+Miara, Thorn of the Glade,Creature — Elf Druid,{3}{G},Cuando entra al campo, pon contadores +1/+1 en criatura objetivo; puede generar maná adicional
+Soul's Fire,Instant,{1}{R},Inflige daño a criatura o jugador igual a cartas en tu mano y descarta todas menos una
+Exquisite Huntmaster,Creature — Human Warrior,{2}{G},Cuando entra, gana vida igual a la fuerza de criatura objetivo y coloca contadores +1/+1
+Eliminate,Instant,{1}{B},Destruye criatura objetivo con fuerza ≤3
+Cling to Dust,Instant,{1}{B},Exilia carta objetivo del cementerio y gana 2 vidas
+Thundering Rebuke,Instant,{2}{R},Inflige X daño a cada criatura objetivo; X es la cantidad de cartas que controlas
+Nadier's Nightblade,Creature — Vampire Assassin,{3}{B},Cuando entra al campo, cada oponente pierde 1 vida por cada criatura Zombie que controlas
+Nadier, Agent of the Duskenel,Legendary Creature — Human Rogue,{2}{B},Cuando entra al campo, roba carta y cada oponente sacrifica criatura objetivo
+Offspring's Revenge,Instant,{2}{B},Robas carta por cada criatura que haya muerto este turno
+Agonizing Remorse,Sorcery,{2}{B},Oponente exilia X cartas de su mano o cementerio
+Coveted Prize,Sorcery,{1}{B},Oponente sacrifica criatura objetivo; si es Zombie, robas carta
+Inscription of Ruin,Sorcery,{2}{B},Destruye criatura objetivo; si es Zombie, roba carta
+Shadows' Verdict,Sorcery,{4}{B},Destruye hasta dos criaturas objetivo
+Allure of the Unknown,Sorcery,{3}{U},Robas 2 cartas y exilia criatura objetivo del cementerio de un oponente
+Blim, Comedic Genius,Creature — Human Wizard,{4}{U},Cuando entra, roba carta; puedes descartar carta para infligir daño a criatura objetivo
+Fulminator Mage,Creature — Human Wizard,{2}{R},Sacrifica para destruir tierra objetivo no básica
+Dogged Pursuit,Instant,{1}{R},Inflige 2 daño a criatura objetivo; si controlas otra criatura roja, inflige 1 daño adicional
+Duskwielder,Creature — Zombie,{3}{B},Cuando otra criatura Zombie muere, gana +1/+1
+Feed the Serpent,Instant,{2}{G},Ganas vida igual a fuerza de criatura objetivo y pone contadores +1/+1
+Jarl of the Forsaken,Creature — Human Warrior,{3}{B},Sacrificio de criatura: inflige 2 daño a criatura objetivo
+Raise the Draugr,Sorcery,{1}{B},Regresa criatura Zombie objetivo de tu cementerio al campo de batalla
+Skull Raid,Sorcery,{3}{B},Robas carta por cada criatura que haya muerto este turno
+Demon Bolt,Instant,{1}{R},Inflige 3 daño a criatura objetivo
+Open the Omenpaths,Instant,{1}{G},Robas carta y pon ficha de criatura 1/1 verde
+Shackles of Treachery,Enchantment — Aura,{3}{U},Controla criatura encantada
+Smashing Success,Instant,{2}{R},Inflige 4 daño a criatura objetivo
+Return Upon the Tide,Instant,{2}{U},Regresa criatura objetivo a la mano de su propietario
+Tergrid's Shadow,Creature — Vampire,{2}{B},Cuando otra criatura muere, cada jugador pierde 1 vida y gana 1 vida
+Kardur's Vicious Return,Instant,{2}{R},Inflige daño a criatura objetivo igual a la fuerza de criatura que controlas
+Check for Traps,Instant,{1}{U},Exilia carta objetivo de un oponente; si es criatura, vuelve a la mano
+Demogorgon's Clutches,Instant,{1}{B},Exilia criatura objetivo
+Burning Hands,Instant,{1}{R},Inflige 3 daño a cada criatura objetivo
+Shessra, Death's Whisper,Legendary Creature — Vampire,{3}{B},Sacrificio de criatura: inflige 2 daño a criatura objetivo
+Elderfang Ritualist,Creature — Vampire Cleric,{2}{B},Cuando entra al campo, puedes ganar vida y hacer que oponente pierda vida
+Urborg Syphon-Mage,Creature — Vampire Wizard,{3}{B},Cuando otra criatura muere, cada jugador pierde 1 vida
+Stingscourger,Creature — Human Rogue,{2}{B},Cuando entra al campo, exilia criatura objetivo del cementerio de un oponente
+Psychotic Episode,Sorcery,{3}{U},Robas X cartas y descarta X cartas
+Rift Bolt,Instant,{1}{R},Inflige 3 daño a criatura o jugador objetivo con suspend
+Pit Keeper,Creature — Zombie,{2}{B},Cuando entra, cada jugador sacrifica criatura objetivo
+Tendrils of Corruption,Instant,{2}{B},Inflige X daño a criatura objetivo; si es Zombie, robas carta
+Kor Dirge,Creature — Kor Soldier,{2}{W},Cuando entra, destruye criatura objetivo atacante o bloqueadora
+Minions' Murmurs,Instant,{1}{B},Robas carta y oponente descarta carta
+Faceless Devourer,Creature — Horror,{3}{B},Cuando entra, exilia criatura objetivo; obtiene +1/+1 contadores
+Assassinate,Sorcery,{1}{B},Destruye criatura objetivo no legendaria
+Phthisis,Instant,{2}{B},Destruye criatura objetivo; si es Zombie, robas carta
+Deepcavern Imp,Creature — Imp,{2}{B},Cuando entra al campo, inflige 2 daño a criatura objetivo
+Molten Slagheap,Land,,Land que puede sacrificar para infligir 1 daño a cualquier objetivo
+Lightning Axe,Instant,{1}{R},Inflige X daño a criatura o jugador objetivo; descarta carta para aumentar X
+Dreadship Reef,Land,,Land que entra girado y puede generar maná rojo o azul
+Nightshade Assassin,Creature — Vampire Assassin,{1}{B},Deathtouch; cuando entra, inflige 1 daño a criatura objetivo
+Mindstab,Instant,{1}{B},Descarta carta objetivo; inflige 1 daño a jugador objetivo
+Dread Return,Sorcery,{2}{B},Regresa criatura objetivo del cementerio al campo de batalla; requiere sacrificio
+Coal Stoker,Creature — Goblin,{1}{R},Cuando entra, inflige 1 daño a criatura objetivo
+Liliana's Devotee,Creature — Human Cleric,{2}{B},Cuando entra, sacrifica criatura objetivo; si es Zombie, roba carta
+Hobbling Zombie,Creature — Zombie,{2}{B},Cuando entra, criatura objetivo recibe -1/-1
+Hungry for More,Sorcery,{3}{B},Robas cartas igual a número de Zombies que controlas
+Diregraf Rebirth,Sorcery,{2}{B},Regresa hasta dos Zombies objetivo de tu cementerio al campo de batalla
+Famished Foragers,Creature — Human Rogue,{2}{B},Cuando entra, exilia carta de un oponente; si es criatura, robas carta
+Burn the Accursed,Instant,{1}{R},Inflige 2 daño a criatura objetivo y destruye criatura encantada o artefacto
+Belligerent Guest,Creature — Human Warrior,{2}{R},Cuando entra al campo, inflige 1 daño a criatura objetivo
+Grisly Ritual,Sorcery,{2}{B},Sacrifica criatura objetivo; robas carta
+Sanguine Statuette,Artifact,{3},Cuando entra al campo, gana vida y puedes sacrificar para infligir daño
+Restless Bloodseeker // Bloodsoaked Reveler,Creature — Vampire,{1}{B},Cuando entra al campo, gana vida; si es sacrificio, inflige daño
+Belligerent Guest,Creature — Human Warrior,{2}{R},Cuando entra al campo, inflige 1 daño a criatura objetivo
+Persistent Specimen,Creature — Zombie,{3}{B},Cuando otra criatura Zombie muere, roba carta
+Pointed Discussion,Instant,{1}{U},Robas carta y descarta carta de oponente
+Into the Night,Instant,{2}{B},Exilia criatura objetivo y gana vida igual a su fuerza
+Ancient Lumberknot,Creature — Treefolk,{4}{G},Ganas vida igual a fuerza de criatura objetivo y pone contadores +1/+1
+Dread Fugue,Instant,{1}{B},Robas carta y sacrifica criatura objetivo
+Blood Petal Celebrant,Creature — Elf Druid,{2}{G},Cuando entra, coloca contadores +1/+1; sacrifica para robar carta
+Markov Retribution,Sorcery,{2}{B},Inflige daño a cada jugador igual a cantidad de Vampiros que controlas
+Bloodsworn Squire // Bloodsworn Knight,Creature — Vampire Soldier,{2}{B},Cuando entra, cada jugador sacrifica criatura objetivo
+Bloody Betrayal,Sorcery,{3}{B},Oponente sacrifica criatura objetivo; si es Zombie, robas carta
+Demonic Gifts,Sorcery,{2}{B},Robas dos cartas y sacrifica criatura objetivo
+Death-Priest of Myrkul,Creature — Zombie Cleric,{3}{B},Cuando otra criatura Zombie muere, gana vida y oponente pierde vida
+Smallpox,Sorcery,{1}{B},Cada jugador sacrifica criatura y pierde vida; descarta carta
+Ghoulish Procession,Sorcery,{3}{B},Robas carta por cada criatura que haya muerto este turno
+Sarulf, Realm Eater,Legendary Creature — Wolf,{3}{G},Cuando entra al campo, destruye criatura objetivo con fuerza ≤3
+Westgate Regent,Creature — Vampire,{2}{B},Cuando entra al campo, cada jugador sacrifica criatura objetivo
+Meteor Swarm,Sorcery,{4}{R},Inflige 4 daño dividido como desees entre criaturas y jugadores
+Skeletal Swarming,Sorcery,{2}{B},Crea ficha de criatura Zombie 1/1 por cada criatura que haya muerto este turno
+Dead // Gone,Instant,{1}{B},Exilia criatura objetivo y roba carta
+Ghoulcaller's Harvest,Sorcery,{3}{B},Regresa criaturas Zombie objetivo del cementerio al campo de batalla
+Dreadfeast Demon,Creature — Demon,{5}{B},Cuando entra al campo, cada jugador sacrifica criatura objetivo
+Dominating Vampire,Creature — Vampire,{3}{B},Cuando entra al campo, controla criatura objetivo hasta fin de turno
+Gix's Caress,Sorcery,{2}{B},Oponente descarta X cartas; X es cantidad de Zombies que controlas
+Extract the Truth,Instant,{2}{U},Robas dos cartas y exilia criatura objetivo del cementerio
+Demon's Due,Sorcery,{2}{B},Cada jugador sacrifica criatura objetivo
+Incriminate,Instant,{1}{B},Robas carta y oponente descarta carta
+Thraxodemon,Creature — Demon,{5}{B},Cuando entra al campo, cada jugador sacrifica criatura objetivo
+Transmogrant Altar,Artifact,{3},Sacrificio de criatura para robar carta
+Gixian Infiltrator,Creature — Human Rogue,{2}{B},Cuando entra al campo, puedes mirar la mano de un oponente y descartar carta
+Battlefield Butcher,Creature — Orc,{3}{R},Cuando entra al campo, inflige daño a criatura objetivo
+Emergency Weld,Instant,{1}{R},Regresa artefacto objetivo del cementerio al campo de batalla
+No One Left Behind,Sorcery,{3}{W},Regresa criatura objetivo del cementerio al campo de batalla bajo tu control
+The Fall of Kroog,Sorcery,{3}{B},Inflige 3 daño a cada criatura y cada jugador pierde 3 vida
+Powerstone Fracture,Instant,{1}{R},Destruye artefacto objetivo
+Raze to the Ground,Sorcery,{2}{R},Destruye artefacto o tierra objetivo
+Assassin's Ink,Instant,{1}{B},Robas carta y oponente pierde 1 vida
+Debt to the Kami,Sorcery,{1}{B},Sacrifica criatura objetivo; gana vida igual a su fuerza
+Dockside Chef,Creature — Human,{2}{R},Crea ficha de comida al entrar al campo
+Kaito's Pursuit,Sorcery,{2}{U},Busca carta en biblioteca de oponente y exilia
+The Long Reach of Night,Sorcery,{3}{B},Oponente sacrifica criatura objetivo
+Okiba Reckoner Raid,Sorcery,{2}{B},Robas carta y descarta carta de oponente
+Reckoner Shakedown,Sorcery,{2}{B},Oponente sacrifica criatura objetivo
+Virus Beetle,Creature — Insect,{1}{B},Cuando entra al campo, destruye artefacto objetivo
+You Are Already Dead,Sorcery,{2}{B},Destruye criatura objetivo; si es Zombie, robas carta
+The Shattered States Era,Sorcery,{3}{R},Inflige 3 daño dividido entre criaturas y jugadores
+Dokuchi Silencer,Creature — Zombie,{3}{B},Cuando entra al campo, exilia criatura objetivo
+Fatal Grudge,Instant,{1}{R},Destruye artefacto objetivo; si controlas carta roja, puedes devolver a mano
+Dusk Mangler,Creature — Zombie,{2}{B},Cuando entra al campo, inflige 1 daño a criatura objetivo
+Involuntary Employment,Sorcery,{2}{B},Oponente sacrifica criatura objetivo
+Illicit Shipment,Instant,{1}{B},Robas carta y oponente pierde vida
+Obscura Charm,Instant,{1}{U},Elige una: contrarrestar hechizo o exiliar criatura objetivo
+Shattered Seraph,Creature — Angel,{5}{W},Vuela; cuando entra al campo, destruye criatura objetivo
+Grisly Sigil,Artifact,{2},Sacrificio de criatura para robar carta
+Queza, Augur of Agonies,Legendary Creature — Demon,{4}{B},Cuando entra al campo, cada jugador sacrifica criatura objetivo
+Corrupt Court Official,Creature — Human,{3}{B},Cuando entra al campo, gana control de criatura objetivo hasta fin de turno
+Glittering Stockpile,Artifact,{3},Ganas vida o robas carta al sacrificar criatura
+Skyfisher Spider,Creature — Spider,{2}{U},Vuela; devuelve criatura objetivo a la mano al atacar
+Garna, Bloodfist of Keld,Legendary Creature — Orc Warrior,{3}{R},Cuando entra al campo, inflige daño a criatura objetivo
+Rona's Vortex,Sorcery,{2}{R},Inflige X daño dividido entre criaturas y jugadores
+Lagomos, Hand of Hatred,Creature — Demon,{4}{B},Cuando entra al campo, cada jugador sacrifica criatura objetivo
+Writhing Necromass,Creature — Zombie,{3}{B},Gana fuerza y resistencia al sacrificar otra criatura
+Vohar, Vodalian Desecrator,Legendary Creature — Zombie,{5}{B},Cada vez que otra criatura muere, inflige daño a jugador objetivo
+Warhost's Frenzy,Sorcery,{2}{R},Inflige 1 daño a cada criatura y jugador por cada criatura que controlas
+Uurg, Spawn of Turg,Creature — Demon,{6}{B},Cuando entra al campo, cada jugador sacrifica criatura objetivo
+Sheoldred's Restoration,Sorcery,{3}{B},Regresa criaturas de tu cementerio al campo de batalla
+Aggressive Sabotage,Instant,{2}{R},Destruye artefacto o inflige daño a criatura objetivo
+Runic Shot,Instant,{1}{R},Contrarresta hechizo objetivo si controlas artefacto
+Shadow Prophecy,Instant,{1}{B},Robas carta y oponente descarta carta
+Balduvian Atrocity,Instant,{2}{R},Inflige X daño a criatura objetivo; X = fuerza criatura que controlas
+Bortuk Bonerattle,Creature — Skeleton,{3}{B},Sacrificio para infligir daño o robar carta
+Gibbering Barricade,Creature — Wall,{1}{U},Defensor; cuando bloquea, puedes robar carta
+Phyrexian Espionage,Instant,{1}{B},Robas carta y cada jugador descarta carta
+Tolarian Geyser,Sorcery,{2}{U},Robas dos cartas
+Battle-Rage Blessing,Instant,{1}{R},Gana +2/+0 y da prisa a criatura objetivo
+Braids's Frightful Return,Sorcery,{3}{B},Robas cartas igual a criaturas que murieron este turno
+Jaya's Firenado,Sorcery,{3}{R},Inflige 3 daño a cada criatura
+In Thrall to the Pit,Sorcery,{4}{B},Destruye criatura objetivo y exilia otra
+Phyrexian Vivisector,Creature — Horror,{4}{B},Cuando otra criatura muere, robas carta
+Bone Splinters,Instant,{1}{B},Destruye criatura objetivo con fuerza ≤2
+Overwhelming Remorse,Instant,{1}{B},Robas carta y oponente descarta carta
+Twinferno,Sorcery,{3}{R},Inflige 4 daño dividido como desees entre criaturas y jugadores
+Pilfer,Instant,{1}{U},Robas carta y exilia carta objetivo de biblioteca de oponente
+Soul Transfer,Sorcery,{2}{B},Regresa criatura objetivo de cementerio al campo de batalla y pierdes vida igual a su fuerza
+Invoke Calamity,Sorcery,{3}{R},Inflige X daño a cada criatura y jugador; X = fuerza criatura objetivo
+Structural Assault,Sorcery,{2}{R},Inflige 2 daño a cada criatura objetivo
+Cut of the Profits,Instant,{1}{B},Robas carta y oponente pierde 1 vida
+Corpse Explosion,Sorcery,{3}{B},Cada jugador sacrifica criatura objetivo; inflige daño igual a fuerza criatura sacrificada
+Fateful Handoff,Instant,{1}{B},Intercambia control de criaturas objetivo
+Mishra's Command,Instant,{3}{R},Elige dos: destruye artefacto, robas carta, inflige 2 daño
+Ashnod, Flesh Mechanist,Creature — Zombie Artificer,{3}{B},Cuando otra criatura muere, puedes ganar vida igual a su fuerza
+Deathbloom Ritualist,Creature — Elf Shaman,{1}{B},Cuando entra al campo, exilia criatura objetivo; regresa a tu mano al final del turno
+Shadow-Rite Priest,Creature — Human Cleric,{2}{B},Cuando entra al campo, exilia criatura objetivo
+Knight of Dusk's Shadow,Creature — Vampire Knight,{3}{B},Vuela; al entrar, inflige 2 daño a jugador objetivo
+The Raven Man,Creature — Human Rogue,{2}{B},Cuando entra al campo, puedes robar carta y descartar carta
+Evolved Sleeper,Creature — Insect,{1}{B},Cuando entra al campo, sacrifica criatura objetivo; gana +1/+1
+Transmogrant's Crown,Artifact,{3},Sacrificio de criatura para robar carta
+Protect the Negotiators,Instant,{1}{W},Protege criaturas objetivo de daño o destrucción
+Sam's Desperate Rescue,Sorcery,{2}{W},Regresa criaturas objetivo del cementerio al campo de batalla
+Mordor Muster,Sorcery,{1}{B},Crea ficha de criatura Zombie 2/2
+Nasty End,Instant,{2}{B},Destruye criatura objetivo; si muere, puedes robar carta
+Cirith Ungol Patrol,Creature — Human Soldier,{2}{W},Cuando entra al campo, gana vida igual a su fuerza
+Fire of Orthanc,Sorcery,{2}{R},Inflige 3 daño a criatura objetivo
+Easterling Vanguard,Creature — Human Soldier,{1}{R},Cuando entra al campo, inflige 1 daño a criatura objetivo
+Lash of the Balrog,Instant,{2}{R},Inflige X daño a criatura objetivo; X = fuerza de criatura que controlas
+Haunt of the Dead Marshes,Enchantment,{2}{B},Al comienzo de tu paso final, crea ficha Zombie 2/2
+The Torment of Gollum,Sorcery,{3}{B},Oponente sacrifica criatura objetivo; robas carta
+Eriette's Whisper,Instant,{1}{U},Robas carta y contrarrestas hechizo objetivo
+Harried Spearguard,Creature — Human Soldier,{2}{W},Cuando bloquea, inflige 1 daño a criatura atacante
+Gríma Wormtongue,Creature — Human Advisor,{2}{B},Robas carta al entrar al campo
+Rise of the Witch-king,Sorcery,{3}{B},Crea ficha de Zombie 2/2 por cada criatura que controlas
+Gollum, Patient Plotter,Creature — Hobbit Rogue,{1}{B},Cuando entra al campo, oponente descarta carta
+Totentanz, Swarm Piper,Creature — Zombie,{4}{B},Cuando entra al campo, cada jugador sacrifica criatura objetivo
+Dark Tutelage,Enchantment,{2}{B},Al comienzo de tu paso final, oponente revela carta superior y pierde vida si es criatura
+Acolyte of Aclazotz,Creature — Vampire Cleric,{2}{B},Cuando entra al campo, robas carta y oponente pierde vida
+Join the Dead,Sorcery,{1}{B},Regresa criatura objetivo del cementerio al campo de batalla
+Bloodthorn Flail,Artifact — Equipment,{2},Equipo que da +2/+0 y permite sacrificar criatura para robar carta
+Zoyowa Lava-Tongue,Creature — Elemental,{3}{R},Vuela, cuando entra al campo inflige 3 daño a criatura objetivo
+Abyssal Gorestalker,Creature — Demon,{5}{B},Al entrar al campo, oponente sacrifica criatura objetivo
+Skullcap Snail,Creature — Snail,{1}{U},Cuando entra al campo, devuelve artefacto objetivo a la mano de su propietario
+Visage of Dread // Dread Osseosaur,Creature — Vampire Dinosaur,{3}{B},Cuando entra al campo, oponente sacrifica criatura; puede transformarse en Dread Osseosaur
+Bloodfell Caves,Land,,Produce {B} al entrar al campo y sacrificar una tierra para agregar {B}{B}
+
+
+
+
+
+
+

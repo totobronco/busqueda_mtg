@@ -24,7 +24,9 @@ UNDERLINE = "\033[4m"
 # =========================================
 # Configuración
 # =========================================
-BASE_URL = "https://www.rivendelelconcilio.cl/mtg-singles-{year}?page={page}"
+BASE_URL = "https://www.rivendelelconcilio.cl/mtg-singles-{year}?filter%5Bcfv%5D%5B30145%5D%5B%5D=52073&filter%5Bcfv%5D%5B30145%5D%5B%5D=52069&min=&max=&page={page}"
+            
+            
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 TIMEOUT = 10
 REINTENTOS = 5

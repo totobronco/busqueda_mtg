@@ -1,6 +1,7 @@
 import os
 import csv
 from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from tiendas import tiendas
 
 # --- Colores para la terminal ---
@@ -24,14 +25,12 @@ def mostrar_resultados(resultados):
     if disponibles:
         print("\n✅ Disponibles:")
 
-        # Buscar precio mínimo
         precios = []
         for r in disponibles:
             precio_num = int(''.join(filter(str.isdigit, r['Precio']))) if r['Precio'] != "-" else float('inf')
             precios.append(precio_num)
         precio_min = min(precios)
 
-        # Mostrar disponibles, resaltando el más económico
         for r in disponibles:
             precio_num = int(''.join(filter(str.isdigit, r['Precio']))) if r['Precio'] != "-" else float('inf')
             color = Colores.VERDE if precio_num == precio_min else Colores.GRIS
@@ -49,8 +48,20 @@ def obtener_mejor_precio(resultados):
     disponibles = [r for r in resultados if r['Disponible'] == "Sí" and r['Precio'] != "-"]
     if not disponibles:
         return None
-    mejor = min(disponibles, key=lambda r: int(''.join(filter(str.isdigit, r['Precio']))))
-    return mejor
+    return min(disponibles, key=lambda r: int(''.join(filter(str.isdigit, r['Precio']))))
+
+# --- Nueva función: Buscar en todas las tiendas en paralelo ---
+def buscar_en_tiendas(carta):
+    resultados = []
+    with ThreadPoolExecutor(max_workers=len(tiendas)) as executor:
+        futures = {executor.submit(tienda["func"], carta): tienda for tienda in tiendas}
+        for future in as_completed(futures):
+            try:
+                resultado = future.result()
+                resultados.append(resultado)
+            except Exception as e:
+                print(f"{Colores.ROJO}Error al buscar en {futures[future]['Tienda']}: {e}{Colores.RESET}")
+    return resultados
 
 # --- Preguntar si desea buscar 1 carta o varias ---
 while True:
@@ -63,19 +74,16 @@ while True:
 # --- Buscar 1 carta ---
 if opcion == "1":
     carta = input("Ingrese el nombre de la carta: ").strip()
-    resultados = []
-    for tienda in tiendas:
-        resultado = tienda["func"](carta)
-        resultados.append(resultado)
+    print(f"\nBuscando {carta} en {len(tiendas)} tiendas en paralelo...")
+    resultados = buscar_en_tiendas(carta)
     mostrar_resultados(resultados)
 
-# --- Buscar varias cartas desde buscar.txt ---
+# --- Buscar varias cartas ---
 else:
     try:
         with open("buscar.txt", "r", encoding="utf-8") as f:
             cartas = [line.strip() for line in f if line.strip()]
 
-        # Preguntar cada cuántas cartas pausar
         while True:
             pausa = input("¿Cada cuántas cartas desea pausar? (Ingrese un número >0 o '-' para todas): ").strip()
             if pausa == "-":
@@ -87,20 +95,14 @@ else:
             else:
                 print("Entrada inválida. Ingrese un número mayor que 0 o '-'.")
 
-        # Crear carpeta Ficheros si no existe
         os.makedirs("Ficheros", exist_ok=True)
-
-        # Preparar datos para CSV
         datos_csv = []
 
         for i in range(0, len(cartas), batch_size):
             batch = cartas[i:i+batch_size]
             for carta in batch:
                 print(f"\nBuscando: {carta}")
-                resultados = []
-                for tienda in tiendas:
-                    resultado = tienda["func"](carta)
-                    resultados.append(resultado)
+                resultados = buscar_en_tiendas(carta)
                 mostrar_resultados(resultados)
 
                 mejor = obtener_mejor_precio(resultados)
@@ -112,42 +114,31 @@ else:
                         "URL": mejor["URL"]
                     })
 
-            # Pausar después de cada batch si hay más cartas y la opción no es "-"
             if batch_size != len(cartas) and i + batch_size < len(cartas):
                 while True:
                     continuar = input("\nDesea continuar con el siguiente batch de cartas? [S/N]: ").strip().upper()
                     if continuar == "S":
                         break
                     elif continuar == "N":
-                        # Guardar CSV antes de salir
                         if datos_csv:
                             now = datetime.now()
-                            fecha = now.strftime("%Y-%m-%d")
-                            hora = now.strftime("%H-%M")
-                            nombre_archivo = f"Ficheros/Ficha_Cartas_{len(datos_csv)}____{fecha}___{hora}.csv"
-
+                            nombre_archivo = f"Ficheros/Ficha_Cartas_{len(datos_csv)}____{now.strftime('%Y-%m-%d')}___{now.strftime('%H-%M')}.csv"
                             with open(nombre_archivo, "w", newline="", encoding="utf-8") as f:
                                 writer = csv.DictWriter(f, fieldnames=["Nombre de la carta", "Tienda", "Precio", "URL"])
                                 writer.writeheader()
                                 writer.writerows(datos_csv)
-
                             print(f"\n✅ Datos guardados en: {nombre_archivo}")
                         exit()
                     else:
                         print("Ingrese 'S' para continuar o 'N' para detener y guardar.")
 
-        # Guardar CSV al final si llegó al último batch
         if datos_csv:
             now = datetime.now()
-            fecha = now.strftime("%Y-%m-%d")
-            hora = now.strftime("%H-%M")
-            nombre_archivo = f"Ficheros/Ficha_Cartas_{len(datos_csv)}____{fecha}___{hora}.csv"
-
+            nombre_archivo = f"Ficheros/Ficha_Cartas_{len(datos_csv)}____{now.strftime('%Y-%m-%d')}___{now.strftime('%H-%M')}.csv"
             with open(nombre_archivo, "w", newline="", encoding="utf-8") as f:
                 writer = csv.DictWriter(f, fieldnames=["Nombre de la carta", "Tienda", "Precio", "URL"])
                 writer.writeheader()
                 writer.writerows(datos_csv)
-
             print(f"\n✅ Datos guardados en: {nombre_archivo}")
 
     except FileNotFoundError:
