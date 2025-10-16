@@ -8,6 +8,7 @@ from .paytowin import metadata as ptw_metadata
 from .rivendelelconcilio import metadata as rc_metadata
 from .magic4ever_scraper import metadata as m4e_metadata
 from .cartasmagicsur import metadata as cms_metadata 
+from .inekosingles import metadata as in_metadata 
 
 tiendas = [
 
@@ -20,5 +21,6 @@ tiendas = [
     ptw_metadata,
     rc_metadata,
     m4e_metadata,
-    cms_metadata
+    cms_metadata,
+    in_metadata
 ]
