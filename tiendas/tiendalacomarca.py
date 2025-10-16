@@ -1,6 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-import re
 
 # --- Colores para la terminal ---
 class Colores:
@@ -12,9 +11,7 @@ class Colores:
 # --- Función de búsqueda para TiendaLaComarca ---
 def buscar(nombre_producto):
     base_url = "https://www.tiendalacomarca.cl"
-    url_busqueda = base_url + "/search?type=product&options%5Bprefix%5D=last&q={}".format(
-        nombre_producto.replace(' ', '+')
-    )
+    url_busqueda = f"{base_url}/search?type=product&options%5Bprefix%5D=last&q={nombre_producto.replace(' ', '+')}"
     resultado = {}
 
     try:
@@ -23,55 +20,46 @@ def buscar(nombre_producto):
         soup = BeautifulSoup(response.content, 'html.parser')
 
         # Buscar todos los productos
-        productos = soup.select("div.product-card-list2__details div.grid-view-item__title")
+        productos = soup.select("div.product-card-list2__details")
         encontrado = False
 
-        # Normalizar palabras de búsqueda
-        palabras_busqueda = re.findall(r'\w+', nombre_producto.lower())
+        for prod in productos:
+            titulo_tag = prod.select_one("div.grid-view-item__title")
+            if not titulo_tag:
+                continue
 
-        for producto_tag in productos:
-            nombre = producto_tag.get_text(strip=True)
-            palabras_titulo = re.findall(r'\w+', nombre.lower())
+            nombre = titulo_tag.get_text(strip=True)
 
-            # Verificar que todas las palabras de búsqueda estén en el título
-            if all(palabra in palabras_titulo for palabra in palabras_busqueda):
-                # URL del producto
-                enlace_a = producto_tag.find_parent("a")
-                url_producto = enlace_a['href'] if enlace_a else url_busqueda
-                if url_producto.startswith("/"):
-                    url_producto = base_url + url_producto
+            # Verificar coincidencia exacta parcial
+            if nombre_producto.lower() not in nombre.lower():
+                continue
 
-                # Buscar variantes y precios disponibles
-                producto_parent = producto_tag.find_parent("div.product-card-list2__details")
-                variantes = producto_parent.select("select.product-form__variants option")
+            # URL del producto
+            enlace_a = prod.find_parent("a")
+            url_producto = enlace_a['href'] if enlace_a else url_busqueda
+            if url_producto.startswith("/"):
+                url_producto = base_url + url_producto
 
-                precios_disponibles = []
+            # Verificar si alguna variante está disponible
+            opciones = prod.select("select.product-form__variants option")
+            disponible = any(opt.get("data-available") == "1" for opt in opciones)
 
-                for v in variantes:
-                    if v.get("data-available") == "1":
-                        precio_str = v.get("data-price", "0").replace("$", "").replace(",", "").strip()
-                        try:
-                            precio = int(precio_str)
-                            precios_disponibles.append(precio)
-                        except:
-                            continue
+            # Obtener precio real mostrado
+            precio_tag = prod.select_one("span.product-price__price.is-bold.qv-regularprice")
+            if precio_tag:
+                precio_final = precio_tag.get_text(strip=True)
+            else:
+                precio_final = "-"
 
-                if precios_disponibles:
-                    precio_final = f"${min(precios_disponibles)}"
-                    disponible = True
-                else:
-                    precio_final = "-"
-                    disponible = False
-
-                resultado = {
-                    "Tienda": "TiendaLaComarca",
-                    "Disponible": "Sí" if disponible else "No",
-                    "Producto": nombre,
-                    "Precio": precio_final,
-                    "URL": url_producto
-                }
-                encontrado = True
-                break
+            resultado = {
+                "Tienda": "TiendaLaComarca",
+                "Disponible": "Sí" if disponible else "No",
+                "Producto": nombre,
+                "Precio": precio_final,
+                "URL": url_producto
+            }
+            encontrado = True
+            break
 
         if not encontrado:
             resultado = {
@@ -94,14 +82,13 @@ def buscar(nombre_producto):
     print(f"{Colores.VERDE} listo{Colores.RESET}")
     return resultado
 
-# --- Metadata de la tienda ---
-metadata = {
-    "nombre": "TiendaLaComarca",
-    "func": buscar
+metadata = { 
+    "nombre": "TiendaLaComarca", 
+    "func": buscar 
 }
 
 # --- Ejemplo de uso ---
 if __name__ == "__main__":
-    producto = "The Endstone"
+    producto = "Meticulous Archive"
     info = buscar(producto)
     print(info)
