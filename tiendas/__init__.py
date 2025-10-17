@@ -11,6 +11,8 @@ from .cartasmagicsur import metadata as cms_metadata
 from .inekosingles import metadata as in_metadata 
 from .AFKStore import metadata as AFK_metadata 
 from .PDAChile import metadata as PDA_metadata 
+from .CardNexus import metadata as Nexus_metadata 
+from .TCGMatch import metadata as TCG_metadata 
 
 tiendas = [
 
@@ -26,5 +28,7 @@ tiendas = [
     cms_metadata,
     AFK_metadata,
     PDA_metadata,
-    in_metadata
+    Nexus_metadata,
+    in_metadata,
+    TCG_metadata,
 ]
