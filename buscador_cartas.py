@@ -2,7 +2,7 @@ import os
 import csv
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from tiendas import tiendas
+from tiendas import tiendas  # tu lista de tiendas con {"nombre":..., "func":...}
 
 # --- Colores para la terminal ---
 class Colores:
@@ -10,7 +10,21 @@ class Colores:
     ROJO = '\033[91m'
     AZUL = '\033[94m'
     GRIS = '\033[90m'
+    CYAN = '\033[96m'
+    MAGENTA = '\033[95m'
+    AMARILLO = '\033[93m'
     RESET = '\033[0m'
+
+# --- Asignar un color y emoji a cada tienda ---
+colores = [Colores.AZUL, Colores.CYAN, Colores.MAGENTA, Colores.AMARILLO, Colores.GRIS, Colores.VERDE, Colores.ROJO]
+emojis = ["🛒", "🏪", "🎯", "🧩", "📦", "🪙", "🛍️"]
+
+tienda_visual = {}
+for i, tienda in enumerate(tiendas):
+    tienda_visual[tienda["nombre"]] = {
+        "color": colores[i % len(colores)],
+        "emoji": emojis[i % len(emojis)]
+    }
 
 # --- Función para mostrar resultados ---
 def mostrar_resultados(resultados):
@@ -33,15 +47,17 @@ def mostrar_resultados(resultados):
 
         for r in disponibles:
             precio_num = int(''.join(filter(str.isdigit, r['Precio']))) if r['Precio'] != "-" else float('inf')
-            color = Colores.VERDE if precio_num == precio_min else Colores.GRIS
-            simbolo = "💰" if precio_num == precio_min else "  "
+            tienda_info = tienda_visual.get(r['Tienda'], {"color": Colores.GRIS, "emoji": "🛒"})
+            color = Colores.VERDE if precio_num == precio_min else tienda_info["color"]
+            simbolo = "💰" if precio_num == precio_min else tienda_info["emoji"]
             print(f"{color}{simbolo} {r['Tienda']} | {r['Producto']} | {r['Precio']} | {r['URL']}{Colores.RESET}")
 
     # Mostrar no disponibles
     if no_disponibles:
         print("\n❌ No disponibles:")
         for r in no_disponibles:
-            print(f"   {r['Tienda']} | {r['Producto']} | {r['Precio']} | {r['URL']}")
+            tienda_info = tienda_visual.get(r['Tienda'], {"color": Colores.GRIS, "emoji": "🛒"})
+            print(f"{tienda_info['color']}{tienda_info['emoji']} {r['Tienda']} | {r['Producto']} | {r['Precio']} | {r['URL']}{Colores.RESET}")
 
 # --- Función para obtener mejor opción por precio ---
 def obtener_mejor_precio(resultados):
@@ -50,7 +66,7 @@ def obtener_mejor_precio(resultados):
         return None
     return min(disponibles, key=lambda r: int(''.join(filter(str.isdigit, r['Precio']))))
 
-# --- Nueva función: Buscar en todas las tiendas en paralelo ---
+# --- Buscar en todas las tiendas en paralelo ---
 def buscar_en_tiendas(carta):
     resultados = []
     with ThreadPoolExecutor(max_workers=len(tiendas)) as executor:
@@ -94,7 +110,7 @@ else:
                 break
             else:
                 print("Entrada inválida. Ingrese un número mayor que 0 o '-'.")
-
+        
         os.makedirs("Ficheros", exist_ok=True)
         datos_csv = []
 
