@@ -10,6 +10,7 @@ from .magic4ever_scraper import metadata as m4e_metadata
 from .cartasmagicsur import metadata as cms_metadata 
 from .inekosingles import metadata as in_metadata 
 from .AFKStore import metadata as AFK_metadata 
+from .PDAChile import metadata as PDA_metadata 
 
 tiendas = [
 
@@ -24,5 +25,6 @@ tiendas = [
     m4e_metadata,
     cms_metadata,
     AFK_metadata,
+    PDA_metadata,
     in_metadata
 ]
