@@ -1,196 +1,21 @@
-Dina soult stepper
-
-For the Common Good #172
-Moldervine Reclamation #214
-Badlands Revival #194
-Titania's Command [The Brothers' War]
-Golgari Thug #076
-Grievous Wound #102
-Come Back Wrong #086
-Apocalypse Demon #058
-Final Parting #093
-Innocuous Rat #103
-Faller's Faithful #100
-Beamsaw Prospector #089
-Embrace Oblivion #098
-Scrounge for Eternity #114
-Cult Conscript #088
-Charcoal Diamond #303
-Persistent Specimen #125
-Boon of Erebos #080
-Recover #084
-Soul Salvage #104
-Demonic Vigor #085
-Bond of Revival #080
-Eternal Taskmaster #090
-Liliana's Triumph #098
-Spark Harvest #105
-Cauldron's Gift #083
-Forever Young #089
-Bloodsoaked Altar #090
-Unholy Indenture #119
-Bladebrand #086
-Bushmeat Poacher #077
-Bitter Revelation #109
-Fleshbag Marauder #128
-Pit Keeper #130
-Kor Dirge #120
-Minions' Murmurs #124
-Phthisis #129
-Dockside Chef #093
-Bone Splinters #083
-Overwhelming Remorse #110
-Dreg Recycler #100
-Mirrodin Avenged #118
-Etched Familiar #101
-Undercity's Embrace #096
-Ultimate Price #095
-Mourner's Surprise #094
-Fake Your Own Death #087
-Hazel's Nocturne #097
-Cremate #059
-Aid the Fallen #076
-Ob Nixilis's Cruelty #101
-Spark Reaper #106
-Unlikely Aid #109
-Transmogrant Altar #124
-Emergency Weld #093
-No One Left Behind #109
-Powerstone Fracture #112
-Assassin's Ink #087
-Sam's Desperate Rescue #105
-Lash of the Balrog #092
-Mutual Destruction #096
-Lampad of Death's Vigil #103
-Blood Beckoning #092
-Blood Price #093
-Pharika's Libation #111
-Driver of the Dead #090
-Supernatural Stamina #108
-Incriminate #084
-Viper's Kiss #109
-March of the Returned #096
-Thallid Soothsayer #107
-Deathbloom Thallid #084
-Witch's Cauldron #129
-Gilt-Leaf Winnower #130
-Illicit Shipment #083
-Gibbering Barricade #095
-Acolyte of Aclazotz #089
-Return Upon the Tide #106
-Social Climber #157
-Wildwood Rebirth #140
-Naturalize #127
-Verdant Haven #138
-Blinding Fog #177
-New Horizons #198
-Slice in Twain #207
-Life Goes On #121
-Feral Prowler #115
-Gaea's Blessing #161
-Return to Nature #173
-Gingerbread Cabin #245
-Centaur Nurturer #156
-Pulse of Murasa #189
-Healer of the Glade #176
-Gift of Paradise #173
-Overgrowth Elemental #187
-Sagu Wildling // Roost Seek #157
-Natural End #183
-Wilt #176
-The Binding of the Titans #166
-Kazandu Nectarpot #190
-Mystic Repeal #180
-Fertilid #152
-Roiling Regrowth #390
-Migration Path #368
-Inspiring Bard #189
-Dawnhart Rejuvenator #180
-Packsong Pup #213
-Retrieve #215
-Laid to Rest #207
-Fog of War #180
-Azusa's Many Journeys #172
-Blossom Prancer #175
-Master's Rebuke #202
-Season of Renewal #205
-Obstinate Baloth #187
-The Dragon-Kami Reborn #181
-Titania's Command #194
-Stew the Coneys #189
-Many Partings #445
-Revive the Shire #185
-Commune with Nature #166
-Tough Cookie #193
-Spider Food #186
-Stormkeld Vanguard // Bear Down #187
-Peregrin Took #181
-Cosmic Hunger #182
-Forced Adaptation #140
-Heaped Harvest #175
-For the Common Good #172
-Cautious Survivor #172
-Coordinated Clobbering #173
-Grasping Longneck #180
-Insidious Fungus #186
-Eumidian Terrabotanist #180
-Shadows' Verdict #124
-Pharika's Cure #100
-Tormented Hero #108
-Pharika's Mender #197
-Fear of Lost Teeth #097
-Moaning Wall #072
-Slimefoot, the Stowaway #205
-Bloodline Culling #089
-Bake into a Pie #076
-Giant's Skewer #091
-Epicure of Blood #099
-Agonizing Syphon #083
-Contaminated Ground #059
-Ghoulish Procession #102
-Deathsprout #189
-Moldervine Reclamation #214
-Moment of Craving #079
-Adventure Awaits #177
-Back for More #177
-Acolyte of Affliction #206
-Bloodthirsty Aerialist #091
-Ruin Rat #075
-Miara, Thorn of the Glade #133
-Dogged Pursuit #085
-Duskwielder #091
-Shessra, Death's Whisper #231
-Exquisite Huntmaster #122
-Diregraf Rebirth #220
-Ancient Lumberknot #230
-Sarulf, Realm Eater #228
-Skeletal Swarming #389
-Ghoulcaller's Harvest #225
-Battlefield Butcher #086
-Jarl of the Forsaken #100
-Okiba Reckoner Raid #117
-Grisly Sigil #082
-Elderfang Ritualist #385
-Skyfisher Spider #221
-Uurg, Spawn of Turg #225
-Bortuk Bonerattle #197
-Grisly Ritual #116
-Dark Tutelage #028
-Restless Bloodseeker // Bloodsoaked Reveler #128
-Cut of the Profits #072
-Deathbloom Ritualist #208
-Demonic Gifts #084
-Rise of the Witch-king #221
-Battle-Rage Blessing #080
-Herbology Instructor // Malady Invoker #189
-Golgari Findbroker #187
-Badlands Revival #194
-Raven of Fell Omens #101
-Invasion of Ulgrotha // Grandmother Ravi Sengir...
-Putrefy #212
-Vinereap Mentor #238
-Winter's Intervention #123
-Sinister Monolith #113
-Let's Play a Game #105
-Susurian Voidborn #118
-Venerated Stormsinger #097
+Pitiless Plunderer
+Carrion Feeder
+Mikaeus, the Unhallowed
+Altar of Dementia
+Nim Deathmantle
+Thran Vigil
+Drivnod, Carnage Dominus
+Bloodsoaked Champion
+Phyrexian Altar
+Pawn of Ulamog
+Putrid Goblin
+Thran Vigil
+Yahenni, Undying Partisan
+ahenni, Undying Partisan
+Nether Traitor
+Blight Mound
+Fumulus, the Infestation
+Desecrated Tomb
+Tormod, the Desecrator
+Skeleton Crew
+Magus of the Bridge

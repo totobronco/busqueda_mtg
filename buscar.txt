@@ -1,64 +1,21 @@
-Cult Conscript
-Forever Young
-Doomed Dissenter
-Hobbling Zombie
-Driver of the Dead
-Boon of Erebos
-Lampad of Death's Vigil
-Dreadfeast Demon
-Bushmeat Poacher
-Witch's Cauldron
-March of the Drowned
-Unholy Indenture
-Vampiric Rites
-Gollum, Patient Plotter
-Demonic Vigor
-Aid the Fallen
-Final Parting
-Illicit Shipment
-Raise the Draugr
-Kor Dirge
-Liliana's Triumph
-Salt Road Skirmish
-Phthisis
-Soul Salvage
-Dockside Chef
-Abyssal Gorestalker
-Dusk Mangler
-Incriminate
-Eternal Taskmaster
-Mirrodin Avenged
-Death's Approach
-Gibbering Barricade
-Corpse Blockade
-Worthy Cost
-Mutual Destruction
-Haunt of the Dead Marshes
-Fleshbag Marauder
-Pit Keeper
-Tymaret, Chosen from Death
-Overwhelming Remorse
-Death-Priest of Myrkul
-Tendrils of Corruption
-Ob Nixilis's Cruelty
-Tergrid's Shadow
-Deathbloom Thallid
-Golgari Thug
-Apocalypse Demon
-Cremate
-Fake Your Own Death
-Corpse Churn
-Persistent Specimen
-Dread Return
-Bitter Revelation
-Mordor Muster
-Dreg Recycler
-Acolyte of Aclazotz
-Thallid Soothsayer
-Keskit, the Flesh Sculptor
-Pharika's Libation
-The Long Reach of Night
-Dig Up the Body
-Midnight Recovery
-Carrier Thrall
-Blood Beckoning
+Pitiless Plunderer
+Carrion Feeder
+Mikaeus, the Unhallowed
+Altar of Dementia
+Nim Deathmantle
+Thran Vigil
+Drivnod, Carnage Dominus
+Bloodsoaked Champion
+Phyrexian Altar
+Pawn of Ulamog
+Putrid Goblin
+Thran Vigil
+Yahenni, Undying Partisan
+ahenni, Undying Partisan
+Nether Traitor
+Blight Mound
+Fumulus, the Infestation
+Desecrated Tomb
+Tormod, the Desecrator
+Skeleton Crew
+Magus of the Bridge

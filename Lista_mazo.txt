@@ -1,0 +1,96 @@
+1 Kratos, God of War (SLD) 2207
+1 Abrade (FDN) 188 *F*
+1 Agitator Ant (MKC) 145
+1 Anax, Hardened in the Forge (CMM) 204
+1 Anger (M3C) 208
+1 Arcane Signet (M3C) 283
+1 Blackblade Reforged (SS2) 8
+1 Blasphemous Act (LTC) 211
+1 Blood Sun (RIX) 92 *F*
+1 Bloodthirsty Blade (MKC) 225
+1 Bothersome Quasit (CLB) 674
+1 Castle Embereth (TDC) 347
+1 Cathartic Reunion (SS3) 2
+1 Chain Reaction (EOC) 87
+1 Chandra, Torch of Defiance (CMM) 876
+1 Court of Ire (LTC) 213
+1 Den of the Bugbear (AFR) 254
+1 Disrupt Decorum (CMM) 1067 *F*
+1 Embercleave (ELD) 120
+1 Fervor (M13) 129
+1 Fire Diamond (CMR) 309 *F*
+1 Flamerush Rider (LTC) 216
+1 Forgotten Cave (CMR) 483
+1 Frontier Warmonger (MKC) 154
+1 Glimpse the Impossible (MH3) 124
+1 Goblin Racketeer (CN2) 53
+1 Gornog, the Red Reaper (J25) 49
+1 Gratuitous Violence (BLC) 197
+1 Harsh Mentor (LTC) 221
+1 Havoc Eater (MKC) 31
+1 Heartless Hidetsugu (CMM) 231
+1 Hellrider (MM3) 98
+1 Heraldic Banner (ELD) 222
+1 Hot Pursuit (MKC) 342
+1 Inferno Titan (LTC) 223
+1 Insurrection (CMM) 699
+1 Kazuul, Tyrant of the Cliffs (MKC) 157
+1 Key to the City (KLR) 248
+1 Komainu Battle Armor (NEC) 21
+1 Light Up the Stage (RVR) 117
+1 Maximum Carnage (SPM) 225
+1 Mob Rule (VOC) 147
+1 Moraug, Fury of Akoum (ZNR) 300
+1 Mountain (HOU) 188
+1 Mountain (AKH) 253
+1 Mountain (BFZ) 269
+1 Mountain (ZNR) 276
+1 Mountain (ZNR) 275
+1 Mountain (ZNR) 277
+1 Mountain (BRO) 284
+1 Mountain (BRO) 285 *F*
+1 Mountain (ONE) 265
+1 Mountain (LTR) 278
+1 Mountain (MKM) 275
+1 Mountain (BLB) 275 *F*
+1 Mountain (BLB) 276
+1 Mountain (BLB) 274
+1 Mountain (MH3) 307 *F*
+1 Mountain (PIP) 324
+1 Mountain (ACR) 107 *F*
+1 Mountain (ACR) 108
+1 Mountain (DSK) 275 *F*
+1 Mountain (FDN) 289 *F*
+1 Mountain (FDN) 288 *F*
+1 Mountain (DFT) 275
+1 Mountain (TDM) 275
+1 Mountain (FIN) 303 *F*
+1 Mountain (FIN) 304
+2 Mountain (FIN) 305
+1 Mountain (TLA) 290
+1 Pyroblast (SS3) 5 *F*
+1 Pyrohemia (SLD) 2211 *F*
+1 Repercussion (WOT) 78
+1 Rite of Flame (SLD) 2209 *F*
+1 Rogue's Passage (FDN) 264
+1 Roiling Vortex (ZNR) 156
+1 Seething Song (SLD) 7051
+1 Shatterskull Smashing (ZNR) 161
+1 Shiny Impetus (OTC) 180
+1 Sol Ring (EOC) 57
+1 Solemn Simulacrum (DSC) 253
+1 Sontaran General (WHO) 96
+1 Soul Sear (M21) 160
+1 Soulbright Flamekin (A25) 151
+1 Spectacular Showdown (MKC) 162
+1 Sulfuric Vortex (SLD) 2210 *F*
+1 Sword of the Animist (CMM) 413
+1 Tectonic Giant (DSC) 168
+1 The Sound of Drums (WHO) 97 *F*
+1 Thrill of Possibility (FDN) 210
+1 Torbran, Thane of Red Fell (ELD) 147
+1 Urabrask the Hidden (CLB) 811
+1 Vandalblast (OTC) 183
+1 Wildfire Devils (C21) 183
+1 World at War (SLD) 2208
+1 Zhao, the Moon Slayer (TLA) 162
