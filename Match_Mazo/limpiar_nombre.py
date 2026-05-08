@@ -5,7 +5,7 @@ import time
 from datetime import datetime
 from colorama import Fore, Style, init
 
-# Inicializar colorama para terminales
+# Inicializar colorama
 init(autoreset=True)
 
 def animacion_carga(mensaje):
@@ -18,22 +18,29 @@ def animacion_carga(mensaje):
 def limpiar_nombre_estricto(linea):
     if "[Maybeboard" in linea:
         return None
-    # Limpieza de metadatos de MTG
+    
+    # 1. Quitar cantidad inicial (1x, 2x...)
     linea = re.sub(r'^\d+x\s+', '', linea)
+    
+    # 2. Quitar paréntesis, corchetes y tags ^...^
     linea = re.sub(r'\(.*?\)', '', linea)
     linea = re.sub(r'\[.*?\]', '', linea)
     linea = re.sub(r'\^.*?\^', '', linea)
-    linea = linea.replace('*F*', '')
-    # Eliminar códigos de set y números al final (ej: 139 o LRW-167)
-    linea = re.sub(r'\s+([A-Z0-9]+-\d+|\d+)\s*$', '', linea)
+    
+    # 3. Quitar indicadores de Foil y variaciones comunes
+    linea = linea.replace('*F*', '').replace('*E*', '')
+    
+    # 4. ELIMINAR CÓDIGOS, NÚMEROS Y SÍMBOLOS AL FINAL (Ej: 250p, 13s, 304★)
+    # Esta regla elimina cualquier combinación de espacios, números, letras y símbolos 
+    # especiales que se encuentren justo al final de la línea.
+    linea = re.sub(r'\s+([A-Za-z0-9\-★]+)\s*$', '', linea)
+    
     return linea.strip()
 
 def obtener_nombre_comandante(lineas):
-    """Extrae el nombre de la línea que contiene [Commander{top}]."""
     for linea in lineas:
         if "[Commander{top}]" in linea:
             nombre = limpiar_nombre_estricto(linea)
-            # Eliminar caracteres prohibidos en nombres de archivos
             nombre = re.sub(r'[\\/*?:"<>|]', '', nombre)
             return nombre
     return "Mazo_Commander"
@@ -44,13 +51,13 @@ def procesar_archivo_mtg(ruta):
             lineas = f.readlines()
         
         nombres_limpios = []
+        # Buscamos el nombre del comandante antes de limpiar todo el archivo
         comandante = obtener_nombre_comandante(lineas)
         
         for l in lineas:
             n = limpiar_nombre_estricto(l)
             if n: nombres_limpios.append(n)
             
-        # Sobreescribir el TXT con los nombres limpios
         with open(ruta, 'w', encoding='utf-8') as f:
             for n in nombres_limpios: f.write(n + '\n')
             
@@ -64,7 +71,6 @@ def mostrar_tabla_resultados(df):
     print(f"\n{Fore.MAGENTA}{'='*45}")
     print(f"{Fore.WHITE}{'CARTA MÁS JUGADA':<35} | {'MATCH'}")
     print(f"{Fore.MAGENTA}{'='*45}")
-    # Ordenar para la consola
     top = df[df['match'] > 0].sort_values(by='match', ascending=False).head(15)
     for _, row in top.iterrows():
         color = Fore.GREEN if row['match'] > 1 else Fore.WHITE
@@ -81,13 +87,11 @@ def main():
         if modo in ['Y', 'N']: break
         print(f"{Fore.RED}Opción inválida.")
 
-    # Formato de fecha y hora solicitado: (DD-MM-YYYY - HH mm)
     fecha_formateada = datetime.now().strftime("%d-%m-%Y - %H %M")
     nombre_csv_final = ""
     primer_ciclo = True
 
     if modo == 'N':
-        # --- MODO BATCH (Carpeta Listas) ---
         ruta_folder = "Listas"
         if not os.path.exists(ruta_folder):
             print(f"{Fore.RED}La carpeta 'Listas' no existe."); return
@@ -119,7 +123,6 @@ def main():
         print(f"{Fore.CYAN}Proceso completo. Archivo guardado: {nombre_csv_final}")
 
     else:
-        # --- MODO 1 A 1 ---
         while True:
             animacion_carga("Comparando cartas actuales")
             nombres_alfa, cmd_alfa = procesar_archivo_mtg('Lista_Alfa.txt')

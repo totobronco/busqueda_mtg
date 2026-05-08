@@ -1,0 +1,99 @@
+Aethersnipe
+Ancient Tomb
+Animar, Soul of Elements
+Arcane Signet
+Arid Mesa
+Ashling, the Limitless
+Ashnod's Altar
+Badlands
+Bayou
+Birds of Paradise
+Birthing Ritual
+Bloodstained Mire
+Boseiju, Who Endures
+Brighthearth Banneret
+Burnt Offering
+Cavalier of Dawn
+Cavalier of Flame
+Cavalier of Gales
+Cavalier of Night
+Cavalier of Thorns
+Cavern of Souls
+City of Brass
+Command Tower
+Cyclonic Rift
+Demonic Tutor
+Evolutionary Leap
+Farseek
+Fellwar Stone
+Fierce Guardianship
+Flamekin Harbinger
+Flooded Strand
+Forest
+Goblin Bombardment
+Grave Sifter
+Graveshifter
+Greater Good
+Greenwarden of Murasa
+Heartless Summoning
+Incandescent Soulstoke
+Indatha Triome
+Korvold, Fae-Cursed King
+Maelstrom Wanderer
+Maha, Its Feathers Night
+Mana Confluence
+Mana Drain
+Mana Echoes
+Mana Vault
+Marsh Flats
+Mayhem Devil
+Metamorphosis
+Misty Rainforest
+Mountain
+Nature's Lore
+Nyxbloom Ancient
+Omnath, Locus of Rage
+Omnath, Locus of the Roil
+Outcaster Trailblazer
+Paleoloth
+Parallel Lives
+Path to Exile
+Phantasmal Image
+Phyrexian Altar
+Phyrexian Tower
+Plains
+Plateau
+Polluted Delta
+Pyre of Heroes
+Reanimate
+Risen Reef
+Riveteers Ascendancy
+Rottenmouth Viper
+Ruthless Technomancer
+Sacrifice
+Savannah
+Scalding Tarn
+Scrubland
+Semblance Anvil
+Sephiroth, Fabled SOLDIER // Sephiroth, One-Winged Angel
+Smokebraider
+Sol Ring
+Solitude
+Sunderflock
+Swords to Plowshares
+Taiga
+Three Tree City
+Three Visits
+Titan of Industry
+Tropical Island
+Tundra
+Twinflame Travelers
+Underground Sea
+Urza's Incubator
+Verdant Catacombs
+Victimize
+Volcanic Island
+Windswept Heath
+Wooded Foothills
+Yarok, the Desecrated
+Zulaport Cutthroat
